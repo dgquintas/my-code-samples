@@ -1,0 +1,143 @@
+Thello
+v7
+r0
+t297546755.395767
+cCheck dependencies
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/hello.o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c normal i386 c com.apple.compilers.gcc.4_2
+cLd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello normal i386
+
+N/System/Library/Frameworks/OpenCL.framework/Headers/opencl.h
+c000000004B45127B000000000000022A
+t1262817915
+s554
+
+N/System/Library/Frameworks/OpenCL.framework/OpenCL
+c000000004B73B8DD0000000000056930
+t1265875165
+s354608
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello
+t1275853955
+s14540
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.LinkFileList
+c000000004C0BFA0F000000000000007B
+t1275853327
+s123
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.o
+t1275853946
+s8296
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.s
+t1275852434
+s22366
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/StaticAnalyzer/normal/i386/hello.plist
+t1275849386
+s275
+
+N/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c
+c000000004C0BFC7A00000000000027AD
+t1275853946
+s10157
+i<fcntl.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<math.h>
+i<unistd.h>
+i<sys/types.h>
+i<sys/stat.h>
+i<OpenCL/opencl.h>
+
+N/usr/include/fcntl.h
+c000000004A5C14A600000000000003EA
+t1247548582
+s1002
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/usr/include/sys/stat.h
+c000000004A73D6550000000000004A1D
+t1249105493
+s18973
+
+N/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
+
+N/usr/include/unistd.h
+c000000004A5C14A7000000000000563E
+t1247548583
+s22078
+
+C<C0003:'CompileC hello.o':P8:W0>
+s297545232.221205
+e297545234.910376
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/hello.o
+x/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c297545232#297545234#0(0"0(0#0#66"/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c4049696142338911744#946"    cd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -gdwarf-2 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/hello.hmap -F/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/include -I../../inc -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources/i386 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources -S /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c -o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.s0#
+
+CAnalyze /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c
+s297542186.228949
+e297542186.489335
+r1
+xAnalyze
+x/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c
+lSLF07#2@74"Analyze /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c297542186#297542186#0(0"0(0#0#66"/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c4300911832#1000"    cd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -mfix-and-continue -gdwarf-2 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/hello.hmap -F/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/include -I../../inc -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources/i386 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources --analyze /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c -o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/StaticAnalyzer/normal/i386/hello.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies297546755#297546755#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/hello.o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c normal i386 c com.apple.compilers.gcc.4_2
+s297546755.302168
+e297546755.303687
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/hello.o
+x/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c297546755#297546755#0(0"0(0#0#66"/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c4300911832#946"    cd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -gdwarf-2 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/hello.hmap -F/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/include -I../../inc -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources/i386 -I/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/DerivedSources -c /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/hello.c -o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.o0#
+
+CLd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello normal i386
+s297546755.303768
+e297546755.395706
+r1
+xLd
+x/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello
+xnormal
+xi386
+old: warning: directory '../../lib' following -L not found
+old: warning: directory '/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/../lib' following -L not found
+lSLF07#2@81"Link /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello297546755#297546755#0(172"ld: warning: directory '../../lib' following -L not foundld: warning: directory '/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/../lib' following -L not found2(22@44"Directory '../../lib' following -L not found297546755#0#58#0(6@0"297546755#0#0#0#0#0"0(22@100"Directory '/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/../lib' following -L not found297546755#58#114#0(6@0"297546755#0#0#0#0#0"0(0#0#0"4300911832#576"    cd /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example    /Developer/usr/bin/gcc-4.2 -arch i386 -L/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug -L../../lib -L/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/../lib -F/Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug -filelist /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.LinkFileList -framework OpenCL -o /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello0#
+

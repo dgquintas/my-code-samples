@@ -1,0 +1,22 @@
+int Factorial(int x)
+{
+  int tmp;
+  WRITE x;
+  if( x > 1) {
+    tmp = (x*Factorial(x-1));
+  }
+  else {
+    tmp = 1;
+  }
+
+  return tmp;
+}
+
+int Main()
+{
+ int x;
+#READ x;
+ x = 5;
+ WRITE Factorial(x);
+ return 0;
+}

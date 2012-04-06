@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p { background:#dad;
+    font-weight:bold;
+    font-size:16px; }
+  </style>
+  <script src="jquery.js"></script>
+</head>
+
+<body>
+    <a id="thisone" href="#">toggle</a>
+    <br/>
+    <a id="notthisone" href="#">nothing</a>
+
+
+    <p style="display: none">Hiya</p>
+    <p style="display: none">Such interesting text, eh?</p>
+    <script>
+        $("a#thisone").click(function () {
+            $("p").toggle(100);
+        });    
+    </script>
+
+</body>
+</html>

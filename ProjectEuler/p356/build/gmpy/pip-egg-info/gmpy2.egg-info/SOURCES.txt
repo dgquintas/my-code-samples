@@ -1,0 +1,8 @@
+README
+pip-egg-info/gmpy2.egg-info/PKG-INFO
+pip-egg-info/gmpy2.egg-info/SOURCES.txt
+pip-egg-info/gmpy2.egg-info/dependency_links.txt
+pip-egg-info/gmpy2.egg-info/top_level.txt
+src/gmpy2.c
+test/test_large.py
+test/test_mpz_args.py

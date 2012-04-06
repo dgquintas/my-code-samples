@@ -1,0 +1,16 @@
+int Main() {
+  int a;
+  double b;
+
+  a = 14;
+  b = 14.88;
+
+  double c;
+
+  c  = a+b;
+
+  WRITE c;
+
+  return 0;
+}
+  

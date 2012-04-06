@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ADD_VM_DIALOG_SECTION">
+		<item value="634" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="507" key="DIALOG_HEIGHT"/>
+		<item value="57" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Sans|9|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

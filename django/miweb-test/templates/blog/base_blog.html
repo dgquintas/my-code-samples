@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load tagging_tags %}
+{% load get_latest %}
+{% load get_dates %}
+
+{% block style %}
+    <style type="text/css">
+      .size1 {font-size: 75%}
+      .size2 {font-size: 90%}
+      .size3 {font-size: 110%}
+      .size4 {font-size: 130%}
+    </style>
+{% endblock %} 
+
+{% block title %}blog{% endblock %}
+{% block hereBlog %}here{% endblock %}
+
+{% block sidebar %}
+<h1>Cloud Tag:</h1>
+<p>
+{% tag_cloud_for_model blog.Entry as tag_cloud with steps=4 %}
+{% for tag in tag_cloud %}
+  <span class="size{{ tag.font_size }}" ><a href="{% url blog-list-tag tag %}">{{ tag.name }}</a></span> 
+{% endfor %}
+</p>
+<h1>Archives: </h1>
+<ul>
+{% get_dates month as entry_months %}
+{% for month in entry_months %}
+<li><a href="{% url blog-list-month month|date:"Y" month|date:"m" %}">{{ month|date:"F Y" }}</a></li>
+{% endfor %}
+</ul>
+
+<h1>Recent: </h1>
+{% get_latest blog.Entry 10 as recent_entries %}
+<ul>
+  {% for r_e in recent_entries %}
+  {% if r_e.published %}
+    <li><a href="{{ r_e.get_absolute_url }}">{{ r_e }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h1>Misc: </h1>
+<p>
+<a href="{% url feeds "rss" %}"><img src="/site-media/images/icons/feeds/rss.png" alt="RSS" title="RSS Feed" /></a>
+<a href="{% url feeds "atom" %}"><img src="/site-media/images/icons/feeds/atom.png" alt="Atom" title="Atom Feed"/></a>
+</p>
+
+<a href="http://www.djangoproject.com/"><img src="http://media.djangoproject.com/img/badges/djangoproject120x25.gif" alt="A Django project." title="A Django project." /></a>
+
+
+{% endblock %}
+

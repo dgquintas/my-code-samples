@@ -1,0 +1,177 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      5855,        168]
+NotebookOptionsPosition[      5218,        141]
+NotebookOutlinePosition[      5579,        157]
+CellTagsIndexPosition[      5536,        154]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", "=", "100000000"}], ";"}]], "Input",
+ CellChangeTimes->{{3.425124638882371*^9, 3.4251246409290757`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "n_", "]"}], " ", ":=", " ", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"acum", " ", "=", " ", "0"}], "}"}], ",", "\[IndentingNewLine]", 
+    
+    RowBox[{
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"i", "=", "1"}], ",", "True", ",", 
+       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"currentPrime", " ", "=", " ", 
+         RowBox[{"Prime", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"nForPi", " ", "=", " ", 
+         FractionBox["n", 
+          RowBox[{"Prime", "[", "i", "]"}]]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"Print", "[", "currentPrime", "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Print", "[", "nForPi", "]"}], ";"}], " ", "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", " ", 
+         RowBox[{
+          RowBox[{"nForPi", " ", "<", " ", "currentPrime"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Break", "[", "]"}]}], "\[IndentingNewLine]", "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"\[Pi]nForPi", " ", "=", " ", 
+         RowBox[{"PrimePi", "[", "nForPi", "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\[Pi]CurrentPrime", " ", "=", " ", 
+         RowBox[{"PrimePi", "[", "currentPrime", "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"acum", " ", "+=", " ", 
+         RowBox[{
+         "\[Pi]nForPi", " ", "-", "\[Pi]CurrentPrime", " ", "+", "1"}]}], 
+        ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+     "acum"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.4251219675496244`*^9, 3.425121999986294*^9}, {
+  3.4251220740000243`*^9, 3.4251225592766557`*^9}, {3.425122609999666*^9, 
+  3.4251226192632155`*^9}, {3.4251226508342667`*^9, 3.425122659144905*^9}, {
+  3.425122978436619*^9, 3.425122978514738*^9}, {3.425123011512415*^9, 
+  3.4251230163245764`*^9}, {3.425123114348925*^9, 3.425123168423243*^9}, {
+  3.4251232041394787`*^9, 3.425123268510066*^9}, {3.4251233318349485`*^9, 
+  3.4251233371003036`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", "n", "]"}]], "Input",
+ CellChangeTimes->{{3.4251231960150504`*^9, 3.4251231985929937`*^9}, 
+   3.4251233398970356`*^9, {3.425124297750126*^9, 3.425124300656245*^9}, {
+   3.4251246354139094`*^9, 3.425124636460697*^9}}],
+
+Cell[BoxData[
+ RowBox[{"f", "[", "100000000", "]"}]], "Output",
+ CellChangeTimes->{{3.425123221263273*^9, 3.4251232424024096`*^9}, 
+   3.425123302180217*^9, 3.425123342787513*^9, 3.4251243046716905`*^9, 
+   3.425124625211633*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"PrimeQ", "[", "i", "]"}], ",", 
+     RowBox[{
+      RowBox[{"PrimePi", "[", 
+       RowBox[{"n", "/", "i"}], "]"}], "-", 
+      RowBox[{"PrimePi", "[", "i", "]"}], "+", "1"}], ",", "0"}], "]"}], ",", 
+   
+   RowBox[{"{", 
+    RowBox[{"i", ",", "2", ",", 
+     RowBox[{"Sqrt", "[", "n", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.425123020605525*^9, 3.425123022933486*^9}, {
+   3.425123344553047*^9, 3.4251233462092123`*^9}, {3.4251234068468733`*^9, 
+   3.4251234100811453`*^9}, 3.4251235954345884`*^9, {3.4251237286176405`*^9, 
+   3.425123734742405*^9}, 3.4251237902402735`*^9, {3.425123896111208*^9, 
+   3.4251238962518277`*^9}, {3.425124062104433*^9, 3.425124076853772*^9}, 
+   3.425124283625758*^9}],
+
+Cell[BoxData["17427258"], "Output",
+ CellChangeTimes->{{3.425122982811311*^9, 3.4251230257770357`*^9}, 
+   3.4251233490215683`*^9, 3.4251236024499893`*^9, 3.4251237361329765`*^9, 
+   3.425123792005831*^9, 3.425123833988594*^9, 3.4251239162041864`*^9, 
+   3.4251240979153285`*^9, {3.4251242891098876`*^9, 3.425124311202648*^9}, 
+   3.4251246533967876`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"PrimePi", "[", 
+     RowBox[{"n", "/", 
+      RowBox[{"Prime", "[", "i", "]"}]}], "]"}], "-", "i", "+", "1"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{"PrimePi", "[", 
+      RowBox[{"Sqrt", "[", "n", "]"}], "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4251245425153894`*^9, 3.425124573575305*^9}}],
+
+Cell[BoxData["17427258"], "Output",
+ CellChangeTimes->{{3.4251246187746687`*^9, 3.4251246488659153`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1078, 764},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification->1.25,
+FrontEndVersion->"6.0 for Microsoft Windows (32-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 143, 3, 35, "Input"],
+Cell[714, 26, 2228, 48, 443, "Input"],
+Cell[CellGroupData[{
+Cell[2967, 78, 250, 4, 35, "Input"],
+Cell[3220, 84, 229, 4, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3486, 93, 813, 19, 35, "Input"],
+Cell[4302, 114, 355, 5, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4694, 124, 400, 11, 35, "Input"],
+Cell[5097, 137, 105, 1, 35, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

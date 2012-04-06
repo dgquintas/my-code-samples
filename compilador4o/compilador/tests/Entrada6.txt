@@ -1,0 +1,27 @@
+void Bar(double a, int b){ 
+  
+  WRITE a;
+  WRITE b;
+
+  return; 
+
+}
+  
+
+
+int Main() {
+  double a;
+  int b;
+
+  a = 14.1;
+  b = 463;
+
+  WRITE a;
+  WRITE b;
+#WRITE a;
+# WRITE Foo(a,b);
+ Bar(a,b);
+
+  return 1;
+}
+  

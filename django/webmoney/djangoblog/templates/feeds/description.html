@@ -1,0 +1,4 @@
+<p>{{ obj.pub_date }}</p>
+{{ obj.body_html|truncatewords_html:"20"|safe }}
+<p><a href="{{ obj.get_absolute_url }}">more</a></p>
+

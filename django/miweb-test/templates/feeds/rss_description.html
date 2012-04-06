@@ -1,0 +1,20 @@
+{% load tagging_tags %}
+
+{{ obj.snip  }}
+
+{{ obj.body_html|safe }} 
+
+<p>
+<a href="{{ obj.get_absolute_url }}#comments">{{ obj.comment_set.count }}</a> comments.<br/>
+
+{% tags_for_object obj as tags %}
+<p>
+  Tags: 
+  {% for t in tags %}
+  <a href="{% url blog-list-tag t%}">{{ t }}</a> 
+  {% endfor %}
+</p>
+
+</p>
+
+

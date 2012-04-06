@@ -1,0 +1,7 @@
+Main {
+  int a;
+  double f;
+  READ a;
+  f= a + 2.5;
+  WRITE f;
+}

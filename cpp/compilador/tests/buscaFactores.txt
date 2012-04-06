@@ -1,0 +1,25 @@
+void buscaFactores(int n)
+{
+  int i;
+  i = 2;
+  while(((n % i) != 0) AND ( i <= (n/2.0) ))
+    i = i+1;
+  if( i <= (n/2) ){ 
+    WRITE i;
+    buscaFactores(n/i);
+  }
+  else
+    WRITE n; #ultimo
+  return;
+}
+      
+
+void Main(){
+  int n;
+  WRITE "Introducir entero a factorizar:";
+  READ n;
+  buscaFactores(n);
+  return;
+}
+
+

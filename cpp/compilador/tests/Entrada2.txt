@@ -1,0 +1,20 @@
+void Main() {
+  struct { 
+    int a;
+    double b;
+    int a2;
+    int a3;
+  } FOO;
+
+  double mierda;
+
+  READ mierda;
+  WRITE mierda;
+  
+  FOO.b = mierda;
+
+  WRITE mierda;
+
+  return;
+  
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="threading.WaitAndNotify"/>
+<fullyQualifiedTypeName name="threading.WaitAndNotify.Hilo"/>
+<fullyQualifiedTypeName name="threading.WaitAndNotify.SharedResource"/>
+<fullyQualifiedTypeName name="java.lang.Thread.State"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="threading.DinningPhilosophers.Chopsticks"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Method"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="threading.DinningPhilosophers"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="threading.DinningPhilosophers.Philosopher"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+</qualifiedTypeNameHistroy>

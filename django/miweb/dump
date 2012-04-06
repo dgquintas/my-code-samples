@@ -1,0 +1,74 @@
+-- MySQL dump 10.11
+--
+-- Host: localhost    Database: django
+-- ------------------------------------------------------
+-- Server version	5.0.51a-24
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `blog_bodycache`
+--
+
+LOCK TABLES `blog_bodycache` WRITE;
+/*!40000 ALTER TABLE `blog_bodycache` DISABLE KEYS */;
+INSERT INTO `blog_bodycache` (`id`, `value`, `last_update`) VALUES (1,'<p><em>Finally</em>, after some days of coding, the time has come to actually put it to good use! \n   Simple as it is, the code behind this blog is available <a href=\"http://bitbucket.org/dgquintas/website/\">here</a>. It\'s been -and still is, lots of work in progress- so much fun coding it, by means of <a href=\"http://www.djangoproject.com/\">Django</a>.\n</p>\n<p>It really has been a long time since the last time I wrote something on a blog :S It surely feels weird to be doing it again. It is special in a way, though, having built from scratch the whole supporting infrastructure instead of relying on blogger or the like. Needless to say, this is an ongoing and likely never-ending experiment. Don\'t be surprised by cryptic server errors and all kinds of scary disasters. \n</p>\n<p>Right now, I\'m going back to the design board in order to add some more features :D I have way more fun coding the platform than actually using it hehe. \n</p>\n<p>Ciao!\n</p>','2009-03-04 18:00:34'),(2,'<blockquote><p>If you\'re going to try, go all the way. Otherwise don\'t even start.\n   This could mean losing girlfriends, wives, relatives, jobs. And maybe\n   your mind. It could mean not eating for three or four days. It could\n   mean freezing on a park bench. It could mean jail. It could mean\n   derision. It could mean mockery, isolation. Isolation is the gift. All\n   the others are a test of your endurance. Of how much you really want to\n   do it. And you\'ll do it, despite rejection in the worst odds. And it\n   will be better than anything else you can imagine. If you\'re going to\n   try, go all the way. There is no other feeling like that. You will be\n   alone with the gods. And the nights will flame with fire. You will ride\n   life straight to perfect laughter. It\'s the only good fight there is .\n   . .\"\n</p>\n</blockquote><p>—Henry Chinaski, <a href=\"http://www.amazon.com/gp/product/0876852630?ie=UTF8&tag=danglpoint-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0876852630\">Factotum</a><img src=\"http://www.assoc-amazon.com/e/ir?t=danglpoint-20&l=as2&o=1&a=0876852630\" width=\"1\" height=\"1\" border=\"0\" alt=\"\" style=\"border:none !important; margin:0px !important;\" />, 2006\n</p>\n<p><a href=\"http://en.wikipedia.org/wiki/Charles_Bukowski\">Bukowski</a> is buried in Green Hills Memorial Park, Palos Verdes, California.\n</p>\n<p>His epitaph reads \"Don’t Try.\"\n</p>','2009-03-04 19:33:11');
+/*!40000 ALTER TABLE `blog_bodycache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `blog_comment`
+--
+
+LOCK TABLES `blog_comment` WRITE;
+/*!40000 ALTER TABLE `blog_comment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `blog_comment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `blog_entry`
+--
+
+LOCK TABLES `blog_entry` WRITE;
+/*!40000 ALTER TABLE `blog_entry` DISABLE KEYS */;
+INSERT INTO `blog_entry` (`id`, `title`, `snip`, `slug`, `tags`, `pub_date`, `last_update`, `body`, `published`, `cached_body_id`) VALUES (1,'First post!','because Django is so much fun','first-post','django coding','2009-03-04 17:48:29','2009-03-04 18:00:30','_Finally_, after some days of coding, the time has come to actually put it to good use! \r\nSimple as it is, the code behind this blog is available [here](http://bitbucket.org/dgquintas/website/). It\'s been -and still is, lots of work in progress- so much fun coding it, by means of [Django](http://www.djangoproject.com/).\r\n\r\nIt really has been a long time since the last time I wrote something on a blog :S It surely feels weird to be doing it again. It is special in a way, though, having built from scratch the whole supporting infrastructure instead of relying on blogger or the like. Needless to say, this is an ongoing and likely never-ending experiment. Don\'t be surprised by cryptic server errors and all kinds of scary disasters. \r\n\r\nRight now, I\'m going back to the design board in order to add some more features :D I have way more fun coding the platform than actually using it hehe. \r\n\r\nCiao!',1,1),(2,'Try','... or not','try','quotes bukowski life','2009-03-04 19:19:13','2009-03-04 19:33:07','> If you\'re going to try, go all the way. Otherwise don\'t even start.\r\nThis could mean losing girlfriends, wives, relatives, jobs. And maybe\r\nyour mind. It could mean not eating for three or four days. It could\r\nmean freezing on a park bench. It could mean jail. It could mean\r\nderision. It could mean mockery, isolation. Isolation is the gift. All\r\nthe others are a test of your endurance. Of how much you really want to\r\ndo it. And you\'ll do it, despite rejection in the worst odds. And it\r\nwill be better than anything else you can imagine. If you\'re going to\r\ntry, go all the way. There is no other feeling like that. You will be\r\nalone with the gods. And the nights will flame with fire. You will ride\r\nlife straight to perfect laughter. It\'s the only good fight there is .\r\n. .\"\r\n\r\n—Henry Chinaski, <a href=\"http://www.amazon.com/gp/product/0876852630?ie=UTF8&tag=danglpoint-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0876852630\">Factotum</a><img src=\"http://www.assoc-amazon.com/e/ir?t=danglpoint-20&l=as2&o=1&a=0876852630\" width=\"1\" height=\"1\" border=\"0\" alt=\"\" style=\"border:none !important; margin:0px !important;\" />, 2006\r\n\r\n\r\n\r\n[Bukowski](http://en.wikipedia.org/wiki/Charles_Bukowski) is buried in Green Hills Memorial Park, Palos Verdes, California.\r\n\r\nHis epitaph reads \"Don’t Try.\"',1,2);
+/*!40000 ALTER TABLE `blog_entry` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `blog_entry_images`
+--
+
+LOCK TABLES `blog_entry_images` WRITE;
+/*!40000 ALTER TABLE `blog_entry_images` DISABLE KEYS */;
+/*!40000 ALTER TABLE `blog_entry_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `blog_image`
+--
+
+LOCK TABLES `blog_image` WRITE;
+/*!40000 ALTER TABLE `blog_image` DISABLE KEYS */;
+/*!40000 ALTER TABLE `blog_image` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2009-03-04 21:03:00

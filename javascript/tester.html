@@ -1,0 +1,289 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>examples/xmlrpc/tester - jsolait - Trac</title><link rel="start" href="/wiki" /><link rel="search" href="/search" /><link rel="help" href="/wiki/TracGuide" /><link rel="stylesheet" href="/trac/css/trac.css" type="text/css" /><link rel="stylesheet" href="/trac/css/wiki.css" type="text/css" /><link rel="alternate" href="/wiki/examples/xmlrpc/tester?format=txt" title="Plain Text" type="text/x-trac-wiki" /><style type="text/css">\
+
+html{
+    text-align: center;
+}
+
+body{
+     border:0px solid lightgrey;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding:1em;
+     text-align: left;
+     width:      70em;
+}
+
+.wikipage{
+ width:      50em;
+ margin-left:2em;
+}
+
+table.listing {
+  font-size:0.8em;
+}
+
+#googleads{
+ /*position: absolute;
+ right:10px;
+ top: 180px;
+ z-index: 1;*/
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+}
+</style>
+</head>
+<body>
+
+
+<div id="banner">
+
+<div id="header"><a id="logo" href="http://jsolait.net/"><img src="http://jsolait.net/download/jsolait_logo.png" width="160" height="80" alt="jsolait logo - by Miguel" /></a><hr /></div>
+
+<form id="search" action="/search" method="get">
+ <div>
+  <label for="proj-search">Search:</label>
+  <input type="text" id="proj-search" name="q" size="10" accesskey="f" value="" />
+  <input type="submit" value="Search" />
+  <input type="hidden" name="wiki" value="on" />
+  <input type="hidden" name="changeset" value="on" />
+  <input type="hidden" name="ticket" value="on" />
+ </div>
+</form>
+
+
+
+<div id="metanav" class="nav"><ul><li class="first"><a href="/login">Login</a></li><li><a href="/settings">Settings</a></li><li><a accesskey="6" href="/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/about">About Trac</a></li></ul></div>
+</div>
+
+<div id="mainnav" class="nav"><ul><li class="active first"><a accesskey="1" href="/wiki">Wiki</a></li><li><a accesskey="2" href="/timeline">Timeline</a></li><li><a accesskey="3" href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a accesskey="4" href="/search">Search</a></li></ul></div>
+<div id="main">
+
+
+
+
+<div id="ctxtnav" class="nav">
+ <h2>Wiki Navigation</h2>
+ <ul>
+   <li><a href="/wiki">Start Page</a></li>
+   <li><a href="/wiki/TitleIndex">Index by Title</a></li>
+   <li><a href="/wiki/RecentChanges">Index by Date</a></li>
+   <li class="last"><a href="/wiki/examples/xmlrpc/tester?action=diff&amp;version=5">Last Change</a></li>
+ </ul>
+ <hr />
+</div>
+
+<div id="content" class="wiki">
+
+ 
+  
+  
+   
+   <div class="wikipage">
+    <div id="searchable"><h2 id="XML-RPCTester">XML-RPC Tester</h2>
+<p>
+This page let's you play around with jsolait's xmlrpc module
+You can use it to call any function of any xmlrpc service.
+All you need to do is to type in the URL of the service into the first textbox.
+Enter the names of the methods the service exposes into the next textbox.
+If you want xmlrpc to use introspection(service needs to support system.listMethods) to retrieve method names then just leave the methods textbox empty.
+Type in the method call expression into the last textbox in the code.
+Once you hit 'run' the code will be evaluated.
+The result of this evaluation will be put out into the txResult text box.
+If the evaluation caused an exception (Fault or Error) the exception will be put out.
+</p>
+<p>
+Please keep in mind that when using mozilla due to security restrictions only calls to the same server the page is hosted on can be made.
+The same may apply to IE (check the security settings of IE).
+</p>
+<script type="text/javascript" src="./jsolait/jsolait.js"></script>
+<script type="text/javascript">jsolait.baseURI="./jsolait";</script>
+<script type="text/javascript">
+//<![CDATA[
+var xmlrpc=null;
+try{
+    var xmlrpc = imprt("xmlrpc");
+}catch(e){
+    alert(e);
+    throw "importing of xmlrpc module failed.";
+}
+
+onSubmit = function(){
+    var addr = document.getElementById("txServer").value;
+    var m = document.getElementById("txMethods").value;
+    m = m.replace(/"/g, "");
+    m = m.replace(/'/g, "");
+    m = m.replace(/ /g, "");
+    if(m.length > 0){
+        var methods = m.split(",");
+    }else{
+        var methods = [];
+    }
+    var evalStr = document.getElementById("txEval").value;
+    
+    var txRslt = document.getElementById("txResult");
+    
+    txRslt.value = "";
+    
+    try{
+        var service = new xmlrpc.ServiceProxy(addr);
+        var rslt = eval("service." + evalStr);
+        txRslt.value = "" + rslt;
+    }catch(e){
+        var em;
+        if(e.toTraceString){
+            em=e.toTraceString();
+        }else{
+            em = e.message;
+        }
+        txRslt.value = "Error trace: \n\n" + em;
+    }
+    return false;
+}
+
+tryEcho = function(){
+    document.getElementById("txServer").value = "http://jsolait.net/services/test.xmlrpc";
+    document.getElementById("txMethods").value = "";
+    document.getElementById("txEval").value = "echo('hello echo')";
+    document.getElementById("txEval").focus();
+    document.getElementById("txResult").value = "";
+}
+
+
+tryArgs2String = function(){
+    document.getElementById("txServer").value = "http://jsolait.net/services/test.xmlrpc";
+    document.getElementById("txMethods").value = "";
+    document.getElementById("txEval").value = "args2String('hello', {a:1234, b:'five'}, [6, 7, 8, 9])";
+    document.getElementById("txEval").focus();
+    document.getElementById("txResult").value = "";
+
+}
+
+tryArgs2Array = function(){
+    document.getElementById("txServer").value = "http://jsolait.net/services/test.xmlrpc";
+    document.getElementById("txMethods").value = "";
+    document.getElementById("txEval").value = "args2Array('hello', {a:1234, b:'five'}, [6, 7, 8, 9])";
+    document.getElementById("txEval").focus();
+    document.getElementById("txResult").value = "";
+}
+
+
+// ]]>
+</script>
+<style type="text/css">
+ .jscodeblock{
+    font-family: 'Verdana';
+    color: #000000;
+    background-color:aliceblue; 
+    /*font-size: 10pt;*/
+    padding:0.5em;
+    border:solid;
+    border-width:1px;
+    border-color:gray;
+    margin-left:1em;
+    margin-top:1em; 
+    margin-bottom:1em;
+ }
+
+ .jscomment {
+    color: #007F00;
+ }
+ .jsdoccomment {
+    color: #3F70AA;
+ }
+ .jskeyword {
+    font-weight: bold;
+    color: #00007F;
+ }
+ .jspunctuator{
+    font-weight: bold;
+ }
+ .jsregex {
+    color: #3F7F3F;
+    background: #E0F0FF;
+ }
+ .jsstring {
+    color: #7F007F;
+ }
+</style>
+<a href="javascript:tryEcho()">try preset (echo)</a> | <a href="javascript:tryArgs2String()">try preset (tryArgs2String)</a> | <a href="javascript:tryArgs2Array()">try preset (tryArgs2Array)</a>
+<div class='jscodeblock'>
+<span class="jskeyword">var</span>&nbsp;serviceURL&nbsp;<span class="jspunctuator">=</span>&nbsp;<span class="jsstring">"<input type="text" id="txServer" size="70" class="code" />"</span><span class="jspunctuator">;</span><br/>
+<br/>
+<span class="jskeyword">var</span>&nbsp;methods&nbsp;<span class="jspunctuator">=</span>&nbsp;<span class="jspunctuator">[</span><input type="text" id="txMethods" size="70" class="code" /><span class="jspunctuator">]</span><span class="jspunctuator">;</span><br/>
+
+<br/>
+<span class="jskeyword">try</span><span class="jspunctuator">{</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeyword">var</span>&nbsp;service&nbsp;<span class="jspunctuator">=</span>&nbsp;<span class="jskeyword">new</span>&nbsp;xmlrpc<span class="jspunctuator">.</span>ServiceProxy<span class="jspunctuator">(</span>serviceURL<span class="jspunctuator">,</span>&nbsp;methods<span class="jspunctuator">)</span><span class="jspunctuator">;</span><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;txRsult<span class="jspunctuator">.</span>value&nbsp;<span class="jspunctuator">=</span>&nbsp;service<span class="jspunctuator">.</span><input type="text" id="txEval" size="60" class="code2" /><span class="jspunctuator">;</span><br/>
+<span class="jspunctuator">}</span><span class="jskeyword">catch</span><span class="jspunctuator">(</span>e<span class="jspunctuator">)</span><span class="jspunctuator">{</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;printTrace<span class="jspunctuator">(</span>e<span class="jspunctuator">)</span><span class="jspunctuator">;</span><br/>
+
+<span class="jspunctuator">}</span>&nbsp;<br/>
+</div>
+
+
+<button type="button" onclick="onSubmit()">run</button><br />
+        <br />
+        txResult:
+        <textarea wrap="off" id="txResult" cols="75" rows="10"></textarea>
+
+        <h2>services at jsolait.net</h2>
+            
+            There is a service with a few methods running on jsolait.net.<br />
+            The service is located at: <code>http://jsolait.net/services/test.xmlrpc</code><br />
+            The following methods are available:<br />
+            <b><code>echo(msg)</code></b> returns the value of the parameter <code>msg</code> <a href="javascript:tryEcho()"> try it</a><br />
+
+            <b><code>args2String(args*)</code></b> returns a string containing the values of the parameters passed. <a href="javascript:tryArgs2String()"> try it</a><br />
+            <b><code>args2Array(args*)</code></b> returns an array containing the values of the parameters passed. <a href="javascript:tryArgs2Array()"> try it</a><br />
+            <br />
+            Hit "try it" to set up the tester with these methods.<br />
+
+            <br />
+        </div>
+</div>
+   </div>
+   
+  
+  <script type="text/javascript">
+   addHeadingLinks(document.getElementById("searchable"), "Link to this section");
+  </script>
+ 
+ 
+</div>
+
+<script type="text/javascript">searchHighlight()</script>
+<div id="altlinks"><h3>Download in other formats:</h3><ul><li class="first last"><a href="/wiki/examples/xmlrpc/tester?format=txt">Plain Text</a></li></ul></div>
+
+</div>
+
+<div id="footer">
+ <hr />
+ <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/trac/trac_logo_mini.png" height="30" width="107"
+   alt="Trac Powered"/></a>
+ <p class="left">
+  Powered by <a href="/about"><strong>Trac 0.10.3</strong></a><br />
+  By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+ </p>
+ <p class="right">
+  Visit the Trac open source project at<br /><a href="http://trac.edgewall.com/">http://trac.edgewall.com/</a>
+ </p>
+</div>
+
+
+
+<br/><br/>
+
+
+
+ </body>
+</html>
+

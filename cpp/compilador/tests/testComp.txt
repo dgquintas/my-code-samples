@@ -1,0 +1,18 @@
+int Main(){
+  int a;
+  double b;
+ 
+  a = 5;
+  b = 5.1;
+  
+  WRITE "mierda";
+  
+  if ( a >= b ){
+    WRITE 14;
+  }
+  else{
+    WRITE 88;
+  }
+
+  return 0;
+}

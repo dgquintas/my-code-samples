@@ -1,0 +1,37 @@
+%!PS-Adobe-2.0
+%%DocumentFonts: Helvetica
+%%BoundingBox: 0 0 612 792
+%%Pages: 1
+%%EndComments
+
+% Norma Gray's Spiral Hat
+% Math and Coding by Larry Doolittle
+%  theta = sqrt(r^2-1)-asec(r)
+
+/cshow { dup stringwidth pop -0.5 mul 0 rmoveto show } def
+/Helvetica findfont 28 scalefont setfont
+306 738 moveto (Norma Gray's Spiral Hat) cshow
+/Helvetica findfont 14 scalefont setfont
+306 712 moveto (math and coding by Larry Doolittle) cshow
+306 690 moveto (download from http://doolittle.faludi.com/norma-hat.html) cshow
+306 336 translate     % center on the page
+/n 64 def             % number of spirals
+1.0                   % inches radius of inner circle
+
+72 mul dup scale      % convert to printer's points
+.02 setlinewidth
+n {
+  /r 1 def
+  1 0 moveto
+  280 {                    % number of data points
+    r dup mul 1 sub sqrt   %  b
+    dup 57.2957795 mul     %  b*180/pi
+    exch 1 atan sub        %  theta = b*180/pi-atan(b)
+    dup cos r mul exch
+    sin r mul lineto
+    r .01 add /r exch def  % increment per data point
+  } repeat
+  stroke
+  360 n div rotate
+} repeat
+showpage

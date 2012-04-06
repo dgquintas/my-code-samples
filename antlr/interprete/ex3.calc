@@ -1,0 +1,4 @@
+// ex2.calc -- error: x is declared twice
+var x: integer;
+var x: integer;
+print(x);

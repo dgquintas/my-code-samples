@@ -1,0 +1,183 @@
+
+#line 1 "head.cpp"
+#ifndef __ac_FIRST__home_dgquintas_samples_cpp_aspectc4343__
+#define __ac_FIRST__home_dgquintas_samples_cpp_aspectc4343__
+#define __ac_FIRST_FILE__home_dgquintas_samples_cpp_aspectc4343_head_cpp__
+#endif // __ac_FIRST__home_dgquintas_samples_cpp_aspectc4343__
+
+#line 1 "head.cpp"
+
+#line 11 "out/head.acc"
+
+#ifndef __ac_h_
+#define __ac_h_
+namespace AC {
+  typedef const char* Type;
+  enum JPType { CALL = 0x0004, EXECUTION = 0x0008, CONSTRUCTION = 0x0010, DESTRUCTION = 0x0020 };
+  struct Action {
+    void **_args; void *_result; void *_target; void *_that; void *_fptr;
+    void (*_wrapper)(Action &);
+    inline void trigger () { _wrapper (*this); }
+  };
+  struct AnyResultBuffer {};
+  template <typename T> struct ResultBuffer : public AnyResultBuffer {
+    char _data[sizeof (T)];
+    ~ResultBuffer () { ((T*)_data)->T::~T(); }
+    operator T& () const { return *(T*)_data; }
+  };
+  template <class Aspect, int Index>
+  struct CFlow {
+    static int &instance () {
+      static int counter = 0;
+      return counter;
+    }
+    CFlow () { instance ()++; }
+    ~CFlow () { instance ()--; }
+    static bool active () { return instance () > 0; }
+  };
+}
+inline void * operator new (unsigned int, AC::AnyResultBuffer *p) { return p; }
+inline void operator delete (void *, AC::AnyResultBuffer *) { } // for VC++
+#endif // __ac_h_
+
+#line 1 "head.cpp"
+
+#line 1 "head.cpp"
+
+#line 48 "out/head.acc"
+
+#ifndef __ac_fwd_Trace__
+#define __ac_fwd_Trace__
+class Trace;
+namespace AC {
+  inline void invoke_Trace_Trace_a0_after ();
+  inline void invoke_Trace_Trace_a1_around ();
+}
+#endif
+
+#ifndef __ac_need__home_dgquintas_samples_cpp_aspectc4343_aop_ah__
+#define __ac_need__home_dgquintas_samples_cpp_aspectc4343_aop_ah__
+#endif
+
+#line 1 "head.cpp"
+
+#line 1 "head.h"
+
+#line 67 "out/head.acc"
+class Trace;
+
+#line 1 "head.h"
+class Foo{
+#line 72 "out/head.acc"
+  friend class ::Trace;
+
+#line 1 "head.h"
+
+  public:
+    
+#line 79 "out/head.acc"
+public: inline void __exec_old_bar();
+
+#line 3 "head.h"
+void bar();
+    int lol();
+};
+
+#line 3 "head.cpp"
+void Foo::bar()
+#line 89 "out/head.acc"
+{
+this->__exec_old_bar();
+  AC::invoke_Trace_Trace_a0_after ();
+
+}
+inline void Foo::__exec_old_bar()
+#line 3 "head.cpp"
+{
+  return;
+}
+
+int Foo::lol(){
+  this->bar();
+  return 123;
+}
+
+#line 106 "out/head.acc"
+
+#ifdef __ac_FIRST_FILE__home_dgquintas_samples_cpp_aspectc4343_head_cpp__
+/*** begin of aspect includes ***/
+#if !defined(__ac_have__home_dgquintas_samples_cpp_aspectc4343_aop_ah__) && defined(__ac_need__home_dgquintas_samples_cpp_aspectc4343_aop_ah__)
+#define __ac_have__home_dgquintas_samples_cpp_aspectc4343_aop_ah__
+
+#line 1 "aop.ah"
+
+#include <stdio.h>
+class Trace {
+#line 117 "out/head.acc"
+
+public:
+  static Trace *aspectof () {
+    static Trace __instance;
+    return &__instance;
+  }
+  static Trace *aspectOf () {
+    return aspectof ();
+  }
+private:
+
+#line 3 "aop.ah"
+
+  int x;
+  public:
+    Trace() : x(0) {}
+
+    
+  
+#line 3 "aop.ah"
+
+public: void __a0_after 
+#line 9 "aop.ah"
+
+#line 9 "aop.ah"
+()
+#line 9 "aop.ah"
+ {
+    printf("lol");
+    x++;
+  }
+  
+#line 3 "aop.ah"
+
+public: void __a1_around 
+#line 13 "aop.ah"
+
+#line 13 "aop.ah"
+()
+#line 13 "aop.ah"
+ {
+    printf ("%d\n", x);
+  }
+
+
+};
+#line 164 "out/head.acc"
+
+namespace AC {
+  inline void invoke_Trace_Trace_a0_after () {
+    ::Trace::aspectof()->__a0_after ();
+  }
+  inline void invoke_Trace_Trace_a1_around () {
+    ::Trace::aspectof()->__a1_around ();
+  }
+} 
+
+#line 18 "aop.ah"
+
+
+
+#line 7 "head.cpp"
+#endif
+/*** end of aspect includes ***/
+#undef __ac_FIRST__home_dgquintas_samples_cpp_aspectc4343__
+#undef __ac_FIRST_FILE__home_dgquintas_samples_cpp_aspectc4343_head_cpp__
+#endif // __ac_FIRST_FILE__home_dgquintas_samples_cpp_aspectc4343_head_cpp__

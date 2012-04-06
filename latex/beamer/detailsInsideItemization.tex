@@ -1,0 +1,97 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\title[Short Paper Title] % (optional, use only with long paper titles)
+{Presentation Title}
+
+\subtitle
+{Presentation Subtitle} % (optional)
+
+\author[Author, Another] % (optional, use only with lots of authors)
+{F.~Author\inst{1} \and S.~Another\inst{2}}
+\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+{
+  \inst{1}%
+  Department of Computer Science\\
+  University of Somewhere
+  \and
+  \inst{2}%
+  Department of Theoretical Philosophy\\
+  University of Elsewhere}
+
+\date[Short Occasion] % (optional)
+{Date / Occasion}
+
+\subject{Talks}
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}<1-2>[label=myframe]
+\begin{itemize}[<+-|alert@+>]
+\item First subject.
+\item Second subject.
+\item Third subject.
+\item lol
+\item lol
+\item lol
+\item lol
+\item lol
+\item lol
+\end{itemize}
+\end{frame}
+\frame
+{
+Some stuff explaining more on the second matter.
+}
+\againframe<3>[<+-|alert@+>]{myframe}
+
+
+
+
+
+\frame<1>[label=Cantor]
+{
+  \frametitle{Main Theorem}
+  \begin{Theorem}
+    $\alpha < 2^\alpha$ for all ordinals~$\alpha$.
+  \end{Theorem}
+  \begin{overprint}
+    \onslide<1>
+    \hyperlink{Cantor<2>}{\beamergotobutton{Proof details}}
+    \onslide<2->
+    % this is only shown in the appendix, where this frame is resumed.
+    \begin{proof}
+      As shown by Cantor, ...
+    \end{proof}
+    \hfill\hyperlink{Cantor<1>}{\beamerreturnbutton{Return}}
+  \end{overprint}
+}
+...
+\appendix
+\againframe<2>{Cantor}
+
+\againframe<6>[<+-|alert@+>]{myframe}
+
+\end{document}
+
+

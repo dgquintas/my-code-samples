@@ -1,0 +1,69 @@
+
+Threads y wraps. (Sec. 6.1, pag. 96)
+=====================================
+Debe siempre asumirse que los bloques se ejecutan en un orden arbitrario. 
+Ademas, dentro de cada bloque, los hilos se agrupan en *wraps*. El tamanyo
+del wrap es implementation dependent, pero podemos asumir que es 32. 
+Cuando el bloque es de dimension >1, se serializan en 1 dimension siguiendo
+un patron row-major. En general, los hilos se proyectan en orden _creciente_
+de coordenadas x, y, z, de existir. Para un cubo, iria primero la matriz
+de menor z (la loncha vamos). 
+
+Thread divergence
+------------------
+Lo que hay que tener presente es que por necesidades del guion, las
+instrucciones se ejecutan al unisono **por wrap**. Es decir, el wrap es 
+la unidad minima por instruccion. Si conseguimos que todos los hilos de un
+wrap sigan el mismo execution path, minimizaremos la *thread divergence*. 
+Esta divergencia se presenta cuando diferentes hilos de un mismo wrap 
+siguen caminos de ejecucion diferentes, lo cual fuerza al HW a volver sobre
+las instrucciones y ejecutar las alternativas sobre segun que hilos del 
+wrap. 
+
+
+Acceso a memoria global (Sec. 6.2, pag. 103)
+=============================================
+Resulta que la memoria global esta implementada en DRAM, ram dinamica. 
+Como recordaras, es del tipo que tiene que ser refrescado y tal. Para 
+comprobar su valor, hay que andarse con cuidado, ya que los condensadores
+que almacenan el valor son muy sensibles. Por tanto, la latencia al 
+acceder es alta. Para contrarrestar esta lentitud, los accesos a esta
+memoria estan paralelizados: cuando se accede a una posicion N dada, 
+se transferiran tambien los valores de las posiciones de alrededor. 
+Si cuando accedemos a esta memoria lo hacemos de forma que hilos
+sucesivos acceden posiciones de memoria sucesivas, el HW lo detectara
+y  podra sacar partido de este tipo de acceso en paralelo. 
+
+Esto tiene mas truco de lo que parece. Por ejemplo, en el caso de matrices, 
+estando almacenadas en row-major. Si el i-esimo hilo accede a los 
+elementos de la i-esima fila se lia. Es decir:
+
+    - x -> 
+    | m00  m10  m20  m30   -> t0
+    y m01  m11  m21  m31   -> t1
+    | m02  m12  m22  m32   -> t2
+    v ...
+
+    [ m00 m10 m20 m30  m01 m11 m21 m31  m02 m12 m22 m32  ...]
+    
+Recordemos que todos los hilos de un wrap se ejecutan al unisono. 
+Cuando t0,t1,t2... se ejecutan, acceden m00, m01, m02... posiciones
+que NO son consecutivas. 
+Esta claro que lo que hay que hacer es que cada hilo se encargue de una
+*columna*, para que asi el wrap cubra el acceso a la matriz en filas. 
+Es como una especie de rotacion. Es decir, queremos: 
+
+    - x -> 
+    | m00  m10  m20  m30   
+    y m01  m11  m21  m31   
+    | m02  m12  m22  m32   
+    v ...
+       t0   t1   t2   t3
+
+para que resulte en un patron de acceso para t0,t1,t2... m00,m10,m20...
+que SI son posiciones consecutivas.
+
+Este concepto se denomina **coalescing**. Solo es relevante para accesos 
+a memoria global, NO a memoria compartida, que no tiene estos problemas
+de velocidad y tal. 
+

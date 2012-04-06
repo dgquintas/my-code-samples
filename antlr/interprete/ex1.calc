@@ -1,0 +1,7 @@
+// ex1.calc -- valid Calc program
+var n: integer;
+var x: integer;
+n := 2+4-1;
+x := n+3+7;
+print(x);
+

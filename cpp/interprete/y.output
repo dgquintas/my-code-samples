@@ -1,0 +1,769 @@
+   0  $accept : cuerpo $end
+
+   1  cuerpo :
+   2         | cuerpo sent
+
+   3  sent : op_apilar '\n'
+   4       | op_cargar '\n'
+   5       | op_guardar '\n'
+   6       | op_aritmetica '\n'
+   7       | op_comparacion '\n'
+   8       | op_cast '\n'
+   9       | op_io '\n'
+  10       | op_salto '\n'
+  11       | op_func '\n'
+  12       | etiqueta '\n'
+  13       | op_reserva '\n'
+  14       | op_logica '\n'
+  15       | '\n'
+
+  16  etiqueta : ETIQUETA ':'
+
+  17  op_apilar : IPUSH_TOK ENTERO
+  18            | FPUSH_TOK REAL
+  19            | IPUSHBP_TOK ENTERO
+  20            | IPOP_TOK
+  21            | FPOP_TOK
+
+  22  op_cargar : ILOAD_TOK
+  23            | FLOAD_TOK
+
+  24  op_guardar : ISTORE_TOK
+  25             | FSTORE_TOK
+
+  26  op_logica : AND_TOK
+  27            | OR_TOK
+  28            | NOT_TOK
+
+  29  op_aritmetica : IADD_TOK
+  30                | FADD_TOK
+  31                | IMUL_TOK
+  32                | FMUL_TOK
+  33                | ISUB_TOK
+  34                | FSUB_TOK
+  35                | IDIV_TOK
+  36                | FDIV_TOK
+  37                | IMOD_TOK
+  38                | FMOD_TOK
+  39                | ICHSGN_TOK
+  40                | FCHSGN_TOK
+
+  41  op_comparacion : IEQUAL_TOK
+  42                 | FEQUAL_TOK
+  43                 | INOTEQUAL_TOK
+  44                 | FNOTEQUAL_TOK
+  45                 | IGREATER_TOK
+  46                 | FGREATER_TOK
+  47                 | ILESS_TOK
+  48                 | FLESS_TOK
+  49                 | IGREATEREQUAL_TOK
+  50                 | FGREATEREQUAL_TOK
+  51                 | ILESSEQUAL_TOK
+  52                 | FLESSEQUAL_TOK
+
+  53  op_cast : CAST_TOK
+  54          | CAST2_TOK
+  55          | FToI_TOK
+
+  56  op_io : IINPUT_TOK
+  57        | FINPUT_TOK
+  58        | IOUTPUT_TOK
+  59        | FOUTPUT_TOK
+  60        | PRINT_TOK CADENA
+
+  61  op_salto : JMP_TOK ETIQUETA
+  62           | JMPZero_TOK ETIQUETA
+  63           | JMPNotZero_TOK ETIQUETA
+
+  64  op_func : Call_TOK ETIQUETA
+  65          | Return_TOK ENTERO ENTERO
+  66          | IReturn_TOK ENTERO ENTERO
+  67          | FReturn_TOK ENTERO ENTERO
+
+  68  op_reserva : RESRV_TOK ENTERO
+
+state 0
+	$accept : . cuerpo $end  (0)
+	cuerpo : .  (1)
+
+	.  reduce 1
+
+	cuerpo  goto 1
+
+
+state 1
+	$accept : cuerpo . $end  (0)
+	cuerpo : cuerpo . sent  (2)
+
+	$end  accept
+	ETIQUETA  shift 2
+	IPUSH_TOK  shift 3
+	FPUSH_TOK  shift 4
+	IPOP_TOK  shift 5
+	FPOP_TOK  shift 6
+	IPUSHBP_TOK  shift 7
+	ILOAD_TOK  shift 8
+	FLOAD_TOK  shift 9
+	ISTORE_TOK  shift 10
+	FSTORE_TOK  shift 11
+	IADD_TOK  shift 12
+	FADD_TOK  shift 13
+	IMUL_TOK  shift 14
+	FMUL_TOK  shift 15
+	ISUB_TOK  shift 16
+	FSUB_TOK  shift 17
+	IDIV_TOK  shift 18
+	FDIV_TOK  shift 19
+	IMOD_TOK  shift 20
+	FMOD_TOK  shift 21
+	CAST_TOK  shift 22
+	CAST2_TOK  shift 23
+	FINPUT_TOK  shift 24
+	FOUTPUT_TOK  shift 25
+	IINPUT_TOK  shift 26
+	IOUTPUT_TOK  shift 27
+	Call_TOK  shift 28
+	Return_TOK  shift 29
+	IReturn_TOK  shift 30
+	FReturn_TOK  shift 31
+	JMP_TOK  shift 32
+	JMPZero_TOK  shift 33
+	JMPNotZero_TOK  shift 34
+	AND_TOK  shift 35
+	OR_TOK  shift 36
+	NOT_TOK  shift 37
+	IEQUAL_TOK  shift 38
+	FEQUAL_TOK  shift 39
+	INOTEQUAL_TOK  shift 40
+	FNOTEQUAL_TOK  shift 41
+	IGREATER_TOK  shift 42
+	FGREATER_TOK  shift 43
+	ILESS_TOK  shift 44
+	FLESS_TOK  shift 45
+	IGREATEREQUAL_TOK  shift 46
+	ILESSEQUAL_TOK  shift 47
+	FGREATEREQUAL_TOK  shift 48
+	FLESSEQUAL_TOK  shift 49
+	ICHSGN_TOK  shift 50
+	FCHSGN_TOK  shift 51
+	FToI_TOK  shift 52
+	RESRV_TOK  shift 53
+	PRINT_TOK  shift 54
+	'\n'  shift 55
+	.  error
+
+	sent  goto 56
+	op_apilar  goto 57
+	op_cargar  goto 58
+	op_guardar  goto 59
+	op_aritmetica  goto 60
+	op_comparacion  goto 61
+	op_cast  goto 62
+	op_io  goto 63
+	op_salto  goto 64
+	op_func  goto 65
+	etiqueta  goto 66
+	op_reserva  goto 67
+	op_logica  goto 68
+
+
+state 2
+	etiqueta : ETIQUETA . ':'  (16)
+
+	':'  shift 69
+	.  error
+
+
+state 3
+	op_apilar : IPUSH_TOK . ENTERO  (17)
+
+	ENTERO  shift 70
+	.  error
+
+
+state 4
+	op_apilar : FPUSH_TOK . REAL  (18)
+
+	REAL  shift 71
+	.  error
+
+
+state 5
+	op_apilar : IPOP_TOK .  (20)
+
+	.  reduce 20
+
+
+state 6
+	op_apilar : FPOP_TOK .  (21)
+
+	.  reduce 21
+
+
+state 7
+	op_apilar : IPUSHBP_TOK . ENTERO  (19)
+
+	ENTERO  shift 72
+	.  error
+
+
+state 8
+	op_cargar : ILOAD_TOK .  (22)
+
+	.  reduce 22
+
+
+state 9
+	op_cargar : FLOAD_TOK .  (23)
+
+	.  reduce 23
+
+
+state 10
+	op_guardar : ISTORE_TOK .  (24)
+
+	.  reduce 24
+
+
+state 11
+	op_guardar : FSTORE_TOK .  (25)
+
+	.  reduce 25
+
+
+state 12
+	op_aritmetica : IADD_TOK .  (29)
+
+	.  reduce 29
+
+
+state 13
+	op_aritmetica : FADD_TOK .  (30)
+
+	.  reduce 30
+
+
+state 14
+	op_aritmetica : IMUL_TOK .  (31)
+
+	.  reduce 31
+
+
+state 15
+	op_aritmetica : FMUL_TOK .  (32)
+
+	.  reduce 32
+
+
+state 16
+	op_aritmetica : ISUB_TOK .  (33)
+
+	.  reduce 33
+
+
+state 17
+	op_aritmetica : FSUB_TOK .  (34)
+
+	.  reduce 34
+
+
+state 18
+	op_aritmetica : IDIV_TOK .  (35)
+
+	.  reduce 35
+
+
+state 19
+	op_aritmetica : FDIV_TOK .  (36)
+
+	.  reduce 36
+
+
+state 20
+	op_aritmetica : IMOD_TOK .  (37)
+
+	.  reduce 37
+
+
+state 21
+	op_aritmetica : FMOD_TOK .  (38)
+
+	.  reduce 38
+
+
+state 22
+	op_cast : CAST_TOK .  (53)
+
+	.  reduce 53
+
+
+state 23
+	op_cast : CAST2_TOK .  (54)
+
+	.  reduce 54
+
+
+state 24
+	op_io : FINPUT_TOK .  (57)
+
+	.  reduce 57
+
+
+state 25
+	op_io : FOUTPUT_TOK .  (59)
+
+	.  reduce 59
+
+
+state 26
+	op_io : IINPUT_TOK .  (56)
+
+	.  reduce 56
+
+
+state 27
+	op_io : IOUTPUT_TOK .  (58)
+
+	.  reduce 58
+
+
+state 28
+	op_func : Call_TOK . ETIQUETA  (64)
+
+	ETIQUETA  shift 73
+	.  error
+
+
+state 29
+	op_func : Return_TOK . ENTERO ENTERO  (65)
+
+	ENTERO  shift 74
+	.  error
+
+
+state 30
+	op_func : IReturn_TOK . ENTERO ENTERO  (66)
+
+	ENTERO  shift 75
+	.  error
+
+
+state 31
+	op_func : FReturn_TOK . ENTERO ENTERO  (67)
+
+	ENTERO  shift 76
+	.  error
+
+
+state 32
+	op_salto : JMP_TOK . ETIQUETA  (61)
+
+	ETIQUETA  shift 77
+	.  error
+
+
+state 33
+	op_salto : JMPZero_TOK . ETIQUETA  (62)
+
+	ETIQUETA  shift 78
+	.  error
+
+
+state 34
+	op_salto : JMPNotZero_TOK . ETIQUETA  (63)
+
+	ETIQUETA  shift 79
+	.  error
+
+
+state 35
+	op_logica : AND_TOK .  (26)
+
+	.  reduce 26
+
+
+state 36
+	op_logica : OR_TOK .  (27)
+
+	.  reduce 27
+
+
+state 37
+	op_logica : NOT_TOK .  (28)
+
+	.  reduce 28
+
+
+state 38
+	op_comparacion : IEQUAL_TOK .  (41)
+
+	.  reduce 41
+
+
+state 39
+	op_comparacion : FEQUAL_TOK .  (42)
+
+	.  reduce 42
+
+
+state 40
+	op_comparacion : INOTEQUAL_TOK .  (43)
+
+	.  reduce 43
+
+
+state 41
+	op_comparacion : FNOTEQUAL_TOK .  (44)
+
+	.  reduce 44
+
+
+state 42
+	op_comparacion : IGREATER_TOK .  (45)
+
+	.  reduce 45
+
+
+state 43
+	op_comparacion : FGREATER_TOK .  (46)
+
+	.  reduce 46
+
+
+state 44
+	op_comparacion : ILESS_TOK .  (47)
+
+	.  reduce 47
+
+
+state 45
+	op_comparacion : FLESS_TOK .  (48)
+
+	.  reduce 48
+
+
+state 46
+	op_comparacion : IGREATEREQUAL_TOK .  (49)
+
+	.  reduce 49
+
+
+state 47
+	op_comparacion : ILESSEQUAL_TOK .  (51)
+
+	.  reduce 51
+
+
+state 48
+	op_comparacion : FGREATEREQUAL_TOK .  (50)
+
+	.  reduce 50
+
+
+state 49
+	op_comparacion : FLESSEQUAL_TOK .  (52)
+
+	.  reduce 52
+
+
+state 50
+	op_aritmetica : ICHSGN_TOK .  (39)
+
+	.  reduce 39
+
+
+state 51
+	op_aritmetica : FCHSGN_TOK .  (40)
+
+	.  reduce 40
+
+
+state 52
+	op_cast : FToI_TOK .  (55)
+
+	.  reduce 55
+
+
+state 53
+	op_reserva : RESRV_TOK . ENTERO  (68)
+
+	ENTERO  shift 80
+	.  error
+
+
+state 54
+	op_io : PRINT_TOK . CADENA  (60)
+
+	CADENA  shift 81
+	.  error
+
+
+state 55
+	sent : '\n' .  (15)
+
+	.  reduce 15
+
+
+state 56
+	cuerpo : cuerpo sent .  (2)
+
+	.  reduce 2
+
+
+state 57
+	sent : op_apilar . '\n'  (3)
+
+	'\n'  shift 82
+	.  error
+
+
+state 58
+	sent : op_cargar . '\n'  (4)
+
+	'\n'  shift 83
+	.  error
+
+
+state 59
+	sent : op_guardar . '\n'  (5)
+
+	'\n'  shift 84
+	.  error
+
+
+state 60
+	sent : op_aritmetica . '\n'  (6)
+
+	'\n'  shift 85
+	.  error
+
+
+state 61
+	sent : op_comparacion . '\n'  (7)
+
+	'\n'  shift 86
+	.  error
+
+
+state 62
+	sent : op_cast . '\n'  (8)
+
+	'\n'  shift 87
+	.  error
+
+
+state 63
+	sent : op_io . '\n'  (9)
+
+	'\n'  shift 88
+	.  error
+
+
+state 64
+	sent : op_salto . '\n'  (10)
+
+	'\n'  shift 89
+	.  error
+
+
+state 65
+	sent : op_func . '\n'  (11)
+
+	'\n'  shift 90
+	.  error
+
+
+state 66
+	sent : etiqueta . '\n'  (12)
+
+	'\n'  shift 91
+	.  error
+
+
+state 67
+	sent : op_reserva . '\n'  (13)
+
+	'\n'  shift 92
+	.  error
+
+
+state 68
+	sent : op_logica . '\n'  (14)
+
+	'\n'  shift 93
+	.  error
+
+
+state 69
+	etiqueta : ETIQUETA ':' .  (16)
+
+	.  reduce 16
+
+
+state 70
+	op_apilar : IPUSH_TOK ENTERO .  (17)
+
+	.  reduce 17
+
+
+state 71
+	op_apilar : FPUSH_TOK REAL .  (18)
+
+	.  reduce 18
+
+
+state 72
+	op_apilar : IPUSHBP_TOK ENTERO .  (19)
+
+	.  reduce 19
+
+
+state 73
+	op_func : Call_TOK ETIQUETA .  (64)
+
+	.  reduce 64
+
+
+state 74
+	op_func : Return_TOK ENTERO . ENTERO  (65)
+
+	ENTERO  shift 94
+	.  error
+
+
+state 75
+	op_func : IReturn_TOK ENTERO . ENTERO  (66)
+
+	ENTERO  shift 95
+	.  error
+
+
+state 76
+	op_func : FReturn_TOK ENTERO . ENTERO  (67)
+
+	ENTERO  shift 96
+	.  error
+
+
+state 77
+	op_salto : JMP_TOK ETIQUETA .  (61)
+
+	.  reduce 61
+
+
+state 78
+	op_salto : JMPZero_TOK ETIQUETA .  (62)
+
+	.  reduce 62
+
+
+state 79
+	op_salto : JMPNotZero_TOK ETIQUETA .  (63)
+
+	.  reduce 63
+
+
+state 80
+	op_reserva : RESRV_TOK ENTERO .  (68)
+
+	.  reduce 68
+
+
+state 81
+	op_io : PRINT_TOK CADENA .  (60)
+
+	.  reduce 60
+
+
+state 82
+	sent : op_apilar '\n' .  (3)
+
+	.  reduce 3
+
+
+state 83
+	sent : op_cargar '\n' .  (4)
+
+	.  reduce 4
+
+
+state 84
+	sent : op_guardar '\n' .  (5)
+
+	.  reduce 5
+
+
+state 85
+	sent : op_aritmetica '\n' .  (6)
+
+	.  reduce 6
+
+
+state 86
+	sent : op_comparacion '\n' .  (7)
+
+	.  reduce 7
+
+
+state 87
+	sent : op_cast '\n' .  (8)
+
+	.  reduce 8
+
+
+state 88
+	sent : op_io '\n' .  (9)
+
+	.  reduce 9
+
+
+state 89
+	sent : op_salto '\n' .  (10)
+
+	.  reduce 10
+
+
+state 90
+	sent : op_func '\n' .  (11)
+
+	.  reduce 11
+
+
+state 91
+	sent : etiqueta '\n' .  (12)
+
+	.  reduce 12
+
+
+state 92
+	sent : op_reserva '\n' .  (13)
+
+	.  reduce 13
+
+
+state 93
+	sent : op_logica '\n' .  (14)
+
+	.  reduce 14
+
+
+state 94
+	op_func : Return_TOK ENTERO ENTERO .  (65)
+
+	.  reduce 65
+
+
+state 95
+	op_func : IReturn_TOK ENTERO ENTERO .  (66)
+
+	.  reduce 66
+
+
+state 96
+	op_func : FReturn_TOK ENTERO ENTERO .  (67)
+
+	.  reduce 67
+
+
+64 terminals, 15 nonterminals
+69 grammar rules, 97 states

@@ -1,0 +1,10 @@
+F:
+IPUSH 5
+IReturn 1 2
+
+Main:
+IPUSH 4
+IPUSH 88
+Call F
+IOUTPUT
+

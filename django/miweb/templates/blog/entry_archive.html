@@ -1,0 +1,44 @@
+{% extends "blog/base_blog.html" %}
+
+{% block sidebar %}
+
+{% if paginator %}
+{% ifnotequal paginator.num_pages 1 %}
+<h1>Pages:</h1>
+  <p>
+  {% if page_obj.has_previous %}
+    <a href="{% url blog-list-newest-page page_obj.previous_page_number %}">« Newer</a> 
+  {% endif %}
+  [
+  {% for page_num in paginator.page_range %}
+  {% ifequal page_num page %}
+    {{ page_num }} 
+  {% else %}
+    <a href="{% url blog-list-newest-page page_num %}">{{ page_num }}</a> 
+  {% endifequal %}
+  {% endfor %}
+  ]
+  {% if page_obj.has_next %}
+   <a href="{% url blog-list-newest-page page_obj.next_page_number %}">Older »</a> 
+  {% endif %}
+  </p>
+  {% endifnotequal %}
+{% endif %}
+
+
+{{ block.super }}
+{% endblock %}
+
+
+{% block contents %}
+{% for entry in entries_list %}
+
+{% include "blog/display_entry.html" %}
+
+{% endfor %}
+
+
+{% endblock %}
+
+
+

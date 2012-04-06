@@ -1,0 +1,49 @@
+// [file: easter.calc, version: 12-Apr-2004]
+//
+// Program to compute the day of Easter for 2004-2013.
+
+var sy: integer;
+var ey: integer;
+
+sy:=2004;                               // start year
+ey:=2013;                               // end year
+
+swap(sy,ey);                            // test swap
+swap(ey,sy);
+
+var y: integer;                         // year
+var m: integer;                         // month
+var d: integer;                         // day
+
+y:=sy;
+
+var g: integer;
+var c: integer;
+var x: integer;
+var z: integer;
+var b: integer;
+var e: integer;
+
+do
+    g := (y - ((y / 19) * 19)) + 1;     // y MOD 19 + 1
+    x := c := (y / 100) + 1;            // test multiple assignment
+    x := (3*x / 4) - 12;
+    z := ((8*c + 5) / 25) - 5;
+    b := (5*y / 4) - x - 10;
+    e := (11*g + 20 + z - x);
+    e := e - (e / 30) * 30;             // e MOD 30
+    
+    e := if e < 0 then e+30 else e;
+    e := if (((e == 25)+(g>11) == 2) + (e==24)) > 0 then e+1 else e;
+    d := 44-e;
+    d := if d < 21 then d+30 else d;
+    d := d+7-((b+d) - ((b+d)/7)*7);
+    m := if d>31 then 4 else 3;
+    d := if d>31 then d-31 else d;
+
+    print(y);
+    print(m);
+    print(d);
+
+    y := y+1;
+while (y <= ey);

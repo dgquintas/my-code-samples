@@ -1,0 +1,28 @@
+The easiest is to "su" as user postgres whilst the pg_hba.conf file 
+contains 
+
+# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+local   all         all                               ident
+
+in order to allow connections from a unix socket. Note that the user 
+must exist in the system (as postgres does, having been created during
+the PG installation). 
+
+Once we are postgres:
+
+createuser -e -D -E -P -R -S newuser
+
+the -e echoes the SQL commands being run
+-D: disable database creation privileges
+-E: encrypts user's pw
+-P: prompt for newuser's password
+-R: can't create roles (users)
+-S: isn't superuser
+
+and possibly the following as well:
+
+createdb -O newuser -e newdb
+
+-e: echo commands
+-O user: sets user as the owner of the newly created database
+

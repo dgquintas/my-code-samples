@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <p>{{ entry.body_html|safe }}</p>
+    Tags: 
+    {% for tag in entry.get_tags %}
+    <a href="{% url blog-list-tag tag %}">{{ tag }}  </a>
+    {% endfor %}
+    <h3>comments:</h3>
+    {% for comment in comments %}
+    <p>Who: {{ comment.who }} said {{ comment.what }} on {{ comment.when|date }}</p>
+    {% endfor %}
+<div id="blog-entry-new-comment">
+        <h1>Add your comment:</h1>
+        <form id="new-comment-form" method="post" 
+              action="{% url miweb.blog.views.comment %}">
+            <p class="form-label">
+                What's your name?
+            </p>
+            <p id="blog-new-comment-name-area">
+                <input type="hidden" name="entry-id" 
+                       value="{{ entry.id }}" />
+                <input id="blog-new-comment-name" name="who" 
+                       maxlength="40" type="text" />
+            </p>
+            <p id="blog-new-comment-body-area">
+                <textarea id="blog-new-comment-body" rows="3" cols="40"
+                          name="what"></textarea>
+            </p>
+            <p id="blog-new-comment-instructions">
+                You can use <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>.
+            </p>
+            <h2>You're going to say:</h2>
+            <div class="wmd-preview"></div>
+            <p>
+                <input id="blog-new-comment-submit" name="submit"
+                       type="submit" value="Comment" />
+            </p>
+        </form>
+    </div>
+
+
+  </body>
+</html>

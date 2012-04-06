@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block pagetitle %}Tumblelog{% endblock %}
+{% block title %}My Page Headline{% endblock %}
+{% block primary %}
+{% for object in latest %}
+	<h2>{{ object.title }}</h2>
+	<p>{{ object.pub_date|timesince }} ago</p>
+	 {{ object.body_html|truncatewords_html:"20"|safe }}
+	<p>tags: {% for tag in object.get_tags%}<a href="/blog/tags/{{tag.name|slugify}}/">{{tag}}</a> {% endfor %}</p>
+	<p><a href="{{object.get_absolute_url}}">read more</a></p>
+{% endfor %}
+{% endblock %}
+

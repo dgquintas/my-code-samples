@@ -1,0 +1,8 @@
+[DEFAULT]
+adefault=lol
+
+[My section]
+foodir: %(dir)s/whatever=un igual!
+dir=frob
+default_dep=rofl and %(adefault)s
+empty=

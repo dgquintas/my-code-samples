@@ -1,0 +1,4 @@
+00000000074eee070000000000006c0a 114f385ed2aad4463e7a964329012327 ffffffffffffffffffffffffffffffff 8296 /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.o
+114f385e9e97829c3e7a96432904261d c75c92fa2be6cb166fe4df313b93c863 ffffffffffffffffffffffffffffffff 14540 /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/Debug/hello
+0000000001b64d5d0000000000006c0f 9322c94ebd693bd413435ad0b1f97b7d ffffffffffffffffffffffffffffffff 22366 /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.s
+0000000001b64d5d0000000000006c0f 82777ad126562328ff2e6a9740df6b16 ffffffffffffffffffffffffffffffff 275 /Users/dgquintas/samples/opencl/OpenCL_Hello_World_Example/build/hello.build/Debug/hello.build/StaticAnalyzer/normal/i386/hello.plist

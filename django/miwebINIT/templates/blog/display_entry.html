@@ -1,0 +1,24 @@
+{% load tagging_tags %}
+
+<div class="gradient">
+  <a name="{{ entry.slug }}"></a>
+
+  <h1>{{ entry.title }} (<a href="{{ entry.get_absolute_url }}">&bull;</a>)</h1>
+  <h3>Published on {{ entry.pub_date|date }}.</h3>
+  <h2>{{ entry.snip }}</h2>
+  
+  {{ entry.body_html|safe }} 
+
+  <p>
+  <a href="{{ entry.get_absolute_url }}#comments">{{ entry.comment_set.count }}</a> comments.<br/>
+
+  {% tags_for_object entry as tags %}
+  <p>
+    <span class="size4">Tags: </span>
+    {% for t in tags %}
+    <a href="{% url blog-list-tag t%}">{{ t }}</a> 
+    {% endfor %}
+  </p>
+
+  </p>
+</div> <!-- gradient -->

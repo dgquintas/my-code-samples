@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+aspect Trace {
+  int x;
+  public:
+    Trace() : x(0) {}
+
+    
+  advice execution("void ...::bar(...)") : after() {
+    printf("lol");
+    x++;
+  }
+  advice execution("void ...::stats()") : around() {
+    printf ("%d\n", x);
+  }
+
+
+};
+

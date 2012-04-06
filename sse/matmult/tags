@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+Compara	Herramientas.c	/^double Compara(const int filas, const int columnas, const int tipo, const double *a, const double *b) {$/;"	f
+Dump_Ascii	Herramientas.c	/^void Dump_Ascii(char *nombre_fichero, const int filas, const int columnas, const int tipo, const double *a) {$/;"	f
+Dump_Ascii_Float	Herramientas.c	/^void Dump_Ascii_Float(char *nombre_fichero, const int filas, const int columnas, const int tipo, const float *a) {$/;"	f
+Dump_Bin	Herramientas.c	/^void Dump_Bin(char *nombre_fichero, const int filas, const int columnas, const int tipo, const double *a) {$/;"	f
+Dump_Bin_Float	Herramientas.c	/^void Dump_Bin_Float(char *nombre_fichero, const int filas, const int columnas, const int tipo, const float *a) {$/;"	f
+Imprime_Pantalla	Herramientas.c	/^void Imprime_Pantalla(const int filas, const int columnas, const int tipo, const double *a) {$/;"	f
+Imprime_Plana	Herramientas.c	/^void Imprime_Plana(const int filas, const int columnas, const double *a) {$/;"	f
+L1_SIZE_LARGE_dirty_cache	Definiciones.h	8;"	d
+L2_SIZE_LARGE_dirty_cache	Definiciones.h	9;"	d
+Load_Ascii	Herramientas.c	/^void Load_Ascii(char *nombre_fichero, int filas, int columnas, int tipo, double *a) {$/;"	f
+Load_Bin	Herramientas.c	/^void Load_Bin(char *nombre_fichero, int filas, int columnas, int tipo, double *a) {$/;"	f
+Load_Cabecera_Ascii	Herramientas.c	/^void Load_Cabecera_Ascii(char *nombre_fichero, int *filas, int *columnas, int *tipo) {$/;"	f
+Load_Cabecera_Bin	Herramientas.c	/^void Load_Cabecera_Bin(char *nombre_fichero, int *filas, int *columnas, int *tipo) {$/;"	f
+POR_COLUMNAS	Definiciones.h	1;"	d
+POR_FILAS	Definiciones.h	2;"	d
+Primera_Vez_Alea	Definiciones.h	/^static int    Primera_Vez_Alea   = 1;$/;"	v
+Rellena	Herramientas.c	/^void Rellena(const int filas, const int columnas, const int tipo, float *a) {$/;"	f
+SUBK	codigosse.c	11;"	d	file:
+Tiempo	Herramientas.c	/^double Tiempo(void){$/;"	f
+Transpuesta	Herramientas.c	/^void Transpuesta(const int filas, const int columnas, const int tipo, const double* a, double* b) {$/;"	f
+Valor_Clock	Herramientas.c	/^void Valor_Clock(void) {$/;"	f
+clocks	Definiciones.h	/^static double clocks = 0.;$/;"	v
+dabs	Definiciones.h	4;"	d
+initialclockoffset	Definiciones.h	/^static unsigned int  initialclockoffset;$/;"	v
+main	codigosse.c	/^int main(int argc, char** argv)$/;"	f
+max	Definiciones.h	5;"	d
+min	Definiciones.h	6;"	d
+naive	codigosse.c	/^void naive(float *c, float *a, float *b, const size_t K, const size_t M, const size_t N)$/;"	f
+opsL0	codigosse.c	/^inline void opsL0(float *a, float *b1, float *b2, float *b3, float *b4, float *b5 ) $/;"	f
+opsL1	codigosse.c	/^void opsL1(float *c,float *a, float *b, float* bL1, size_t k, size_t m, $/;"	f
+opsL2	codigosse.c	/^void opsL2(float *c, float *a, float *b, const size_t K, const size_t M, const size_t N, const size_t k, const size_t mn)$/;"	f
+rdtsc	Definiciones.h	/^static __inline unsigned long rdtsc(void) {$/;"	f
+rdtsc	Definiciones.h	/^static inline void rdtsc(unsigned int *high, unsigned int *low){$/;"	f
+resetXMM	codigosse.c	/^void resetXMM(void)$/;"	f
+sumaRegsTemp	codigosse.c	/^void sumaRegsTemp(float *c)$/;"	f

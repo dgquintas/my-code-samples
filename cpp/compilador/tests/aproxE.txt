@@ -1,0 +1,26 @@
+int Factorial(int x)
+{
+  int tmp;
+  if( x > 1) {
+    tmp = (x*Factorial(x-1));
+  }
+  else {
+    tmp = 1;
+  }
+  return tmp;
+}
+
+int Main()
+{
+  double e;
+  e = 0.0;
+  int i; i=0;
+  while( i < 8 ) {    #8! > 2^(15);
+    e = e + ((double)1/Factorial(i));
+    i = i+1;
+  }
+    
+  WRITE "Aproximación del número e...";
+  WRITE e;
+  return 0;
+}

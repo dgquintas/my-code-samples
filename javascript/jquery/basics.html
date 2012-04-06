@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>jQuery demo</title>
+ </head>
+ <body>
+   <a href="http://jquery.com/">jQuery</a>
+   <script src="jquery.js"></script>
+   <script>
+     $(document).ready( //wait till document is ready to be manipulated
+      function(){
+         $("a").click(function(event){ 
+             alert("As you can see, the link no longer took you to jquery.com");
+             event.preventDefault();
+             $(this).hide("slow");
+         });
+     });
+   </script>
+ </body>
+ </html>

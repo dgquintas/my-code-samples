@@ -1,0 +1,18 @@
+void imprimeStruct(struct test_t {int a; double b;} x)
+{
+  WRITE x.a;
+  WRITE x.b;
+  return;
+}
+void Main() {
+  
+  struct test_t kk;
+  kk.a = 14;
+  kk.b = 14.88;
+  imprimeStruct(kk);
+  return;
+}
+
+ 
+
+

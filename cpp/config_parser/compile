@@ -1,0 +1,1 @@
+g++ ConfigParser.cpp ConfigSet.cpp ConfigsMap.cpp GenericValue.cpp lex.yy.c y.tab.c -lfl -shared -o libparsux.so

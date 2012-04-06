@@ -1,0 +1,26 @@
+void Main()
+{
+  int a;
+  int b;
+
+  a = 1;
+  b = 0;
+
+ if( a AND b )
+    WRITE "'a' y 'b' son ciertos";
+  else 
+    WRITE "'a' o 'b' son falsos...";
+  
+  if( a OR b )
+    WRITE "o bien 'a' o 'b' es cierto";
+  else 
+    WRITE "'a' y 'b' son ambos falsos...";
+
+  if( NOT a )
+    WRITE "'a' es falso";
+  else
+    WRITE "'a' es cierto";
+  
+  return;
+}
+    

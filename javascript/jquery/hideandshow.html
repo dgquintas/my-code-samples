@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div { background:#def3ca; margin:3px; width:80px; 
+  display:none; float:left; text-align:center; }
+  </style>
+  <script src="jquery.js"></script>
+</head>
+<body>
+  
+  <button id="showr">Show</button>
+  <button id="hidr">Hide</button>
+  <div>Hello 3,</div>
+
+  <div>how</div>
+  <div>are</div>
+  <div>you?</div>
+<script>
+$("#showr").click(function () {
+  $("div:eq(0)").show("fast", function () {
+    /* use callee so don't have to name the function */
+    $(this).next("div").show("fast", arguments.callee);
+  });
+});
+$("#hidr").click(function () {
+  $("div").hide(2000);
+});
+
+</script>
+
+</body>
+</html>

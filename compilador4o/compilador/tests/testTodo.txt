@@ -1,0 +1,15 @@
+
+int Main()
+{
+  struct Tiempo_t
+  {
+    int minuto;
+    int segundos;
+  } arrayTPO[5];
+
+  READ arrayTPO[0].minuto;
+
+  return 0;
+}
+
+

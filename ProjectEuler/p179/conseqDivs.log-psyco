@@ -1,0 +1,212 @@
+17:59:55.98  Logging started, 07/06/09                  %%%%%%%%%%%%%%%%%%%%
+17:59:55.99  ActivePassiveProfiler: starting                           %%%%%
+17:59:56.04   ______
+        #1   |41.5 %|  active_start              ...psyco/profiler.py:273
+17:59:56.04  tag function: __main__.getSmallestPrimeFactors                %
+17:59:56.04  tag function: __main__.getSigmaZero                           %
+17:59:56.04  tag function: __main__.main                                   %
+17:59:56.11  tag function: __main__.main                                   %
+17:59:56.14  tag function: __main__.main                                   %
+17:59:56.17  tag function: __main__.main                                   %
+17:59:56.20  tag function: __main__.main                                   %
+17:59:56.21  tag function: __main__.<module>                               %
+17:59:56.23  tag function: __main__.main                                   %
+17:59:56.24  tag function: __main__.getSigmaZero                           %
+17:59:56.26   ______
+        #1   |18.0 %|  active_start              ...psyco/profiler.py:273
+17:59:56.28  tag function: __main__.main                                   %
+17:59:56.32  tag function: __main__.main                                   %
+17:59:56.38  tag function: __main__.main                                   %
+17:59:56.43  tag function: __main__.main                                   %
+17:59:56.46   ______
+        #1   |10.1 %|  active_start              ...psyco/profiler.py:273
+17:59:56.49  tag function: __main__.main                                   %
+17:59:56.50  tag function: __main__.<module>                               %
+17:59:56.52  tag function: __main__.getSigmaZero                           %
+17:59:56.55  tag function: __main__.main                                   %
+17:59:56.62  tag function: __main__.main                                   %
+17:59:56.66   ______
+        #1   | 6.4 %|  active_start              ...psyco/profiler.py:273
+17:59:56.68  tag function: __main__.main                                   %
+17:59:56.75  tag function: __main__.main                                   %
+17:59:56.83  tag function: __main__.main                                   %
+17:59:56.86   ______
+        #1   | 8.6 %|  <module>                         conseqDivs.py:1
+        #2   | 7.9 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 4.3 %|  active_start              ...psyco/profiler.py:273
+17:59:56.91  tag function: __main__.main                                   %
+17:59:56.93  tag function: __main__.<module>                               %
+17:59:56.93  tag function: __main__.getSigmaZero                           %
+17:59:56.99  tag function: __main__.main                                   %
+17:59:57.07   ______
+        #1   | 8.4 %|  main                             conseqDivs.py:76
+        #2   | 3.9 %|  <module>                         conseqDivs.py:1
+        #3   | 3.1 %|  getSigmaZero                     conseqDivs.py:60
+        #4   | 3.0 %|  active_start              ...psyco/profiler.py:273
+17:59:57.07  tag function: __main__.main                                   %
+17:59:57.16  tag function: __main__.main                                   %
+17:59:57.25  tag function: __main__.main                                   %
+17:59:57.27   ______
+        #1   | 7.6 %|  <module>                         conseqDivs.py:1
+        #2   | 6.8 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 2.4 %|  main                             conseqDivs.py:76
+        #4   | 2.1 %|  active_start              ...psyco/profiler.py:273
+17:59:57.36  tag function: __main__.main                                   %
+17:59:57.46  tag function: __main__.<module>                               %
+17:59:57.47   ______
+        #1   | 8.7 %|  getSigmaZero                     conseqDivs.py:60
+        #2   | 7.9 %|  main                             conseqDivs.py:76
+        #3   | 1.7 %|  active_start              ...psyco/profiler.py:273
+17:59:57.49  tag function: __main__.main                                   %
+17:59:57.50  tag function: __main__.getSigmaZero                           %
+17:59:57.60  tag function: __main__.main                                   %
+17:59:57.68   ______
+        #1   | 6.4 %|  main                             conseqDivs.py:76
+        #2   | 3.7 %|  <module>                         conseqDivs.py:1
+        #3   | 3.2 %|  getSigmaZero                     conseqDivs.py:60
+        #4   | 1.3 %|  active_start              ...psyco/profiler.py:273
+17:59:57.72  tag function: __main__.main                                   %
+17:59:57.81  tag function: __main__.main                                   %
+17:59:57.88   ______
+        #1   | 7.8 %|  main                             conseqDivs.py:76
+        #2   | 6.7 %|  <module>                         conseqDivs.py:1
+        #3   | 6.7 %|  getSigmaZero                     conseqDivs.py:60
+        #4   | 1.0 %|  active_start              ...psyco/profiler.py:273
+17:59:57.89  tag function: __main__.main                                   %
+17:59:57.98  tag function: __main__.main                                   %
+17:59:58.01  tag function: __main__.<module>                               %
+17:59:58.06  tag function: __main__.getSigmaZero                           %
+17:59:58.07  tag function: __main__.main                                   %
+17:59:58.08   ______
+        #1   | 2.2 %|  <module>                         conseqDivs.py:1
+        #2   | 1.3 %|  main                             conseqDivs.py:76
+        #3   | 0.7 %|  getSigmaZero                     conseqDivs.py:60
+        #4   | 0.7 %|  active_start              ...psyco/profiler.py:273
+17:59:58.16  tag function: __main__.main                                   %
+17:59:58.31   ______
+        #1   | 7.9 %|  main                             conseqDivs.py:76
+        #2   | 4.9 %|  <module>                         conseqDivs.py:1
+        #3   | 4.0 %|  getSigmaZero                     conseqDivs.py:60
+        #4   | 0.5 %|  active_start              ...psyco/profiler.py:273
+17:59:58.32  tag function: __main__.main                                   %
+17:59:58.45   ______
+        #1   | 5.4 %|  <module>                         conseqDivs.py:1
+        #2   | 4.9 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 4.4 %|  main                             conseqDivs.py:76
+        #4   | 0.5 %|  active_start              ...psyco/profiler.py:273
+17:59:58.53  tag function: __main__.main                                   %
+17:59:58.63  tag function: __main__.main                                   %
+17:59:58.66   ______
+        #1   | 7.7 %|  <module>                         conseqDivs.py:1
+        #2   | 7.5 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 3.4 %|  main                             conseqDivs.py:76
+        #4   | 0.4 %|  dumpcharges               ...s/psyco/logger.py:62
+        #5   | 0.4 %|  active_start              ...psyco/profiler.py:273
+17:59:58.71  tag function: __main__.main                                   %
+17:59:58.82  tag function: __main__.<module>                               %
+17:59:58.84   ______
+        #1   | 8.8 %|  getSigmaZero                     conseqDivs.py:60
+        #2   | 4.5 %|  main                             conseqDivs.py:76
+        #3   | 0.5 %|  <module>                         conseqDivs.py:1
+        #4   | 0.4 %|  dumpcharges               ...s/psyco/logger.py:62
+        #5   | 0.3 %|  active_start              ...psyco/profiler.py:273
+17:59:58.87  tag function: __main__.getSigmaZero                           %
+17:59:58.94  tag function: __main__.main                                   %
+17:59:59.07  tag function: __main__.main                                   %
+17:59:59.08   ______
+        #1   | 3.7 %|  <module>                         conseqDivs.py:1
+        #2   | 3.3 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 2.3 %|  main                             conseqDivs.py:76
+        #4   | 0.5 %|  dumpcharges               ...s/psyco/logger.py:62
+        #5   | 0.2 %|  active_start              ...psyco/profiler.py:273
+17:59:59.14  tag function: __main__.main                                   %
+17:59:59.22  tag function: __main__.main                                   %
+17:59:59.24   ______
+        #1   | 7.1 %|  <module>                         conseqDivs.py:1
+        #2   | 6.3 %|  getSigmaZero                     conseqDivs.py:60
+        #3   | 1.9 %|  main                             conseqDivs.py:76
+        #4   | 0.5 %|  dumpcharges               ...s/psyco/logger.py:62
+        #5   | 0.2 %|  active_start              ...psyco/profiler.py:273
+17:59:59.36  tag function: __main__.main                                   %
+17:59:59.41  tag function: __main__.<module>                               %
+17:59:59.44  tag function: __main__.main                                   %
+17:59:59.45   ______
+        #1   | 8.8 %|  getSigmaZero                     conseqDivs.py:60
+        #2   | 1.5 %|  <module>                         conseqDivs.py:1
+        #3   | 1.3 %|  main                             conseqDivs.py:76
+        #4   | 0.4 %|  dumpcharges               ...s/psyco/logger.py:62
+        #5   | 0.1 %|  active_start              ...psyco/profiler.py:273
+17:59:59.46  tag function: __main__.getSigmaZero                           %
+17:59:59.53  tag function: __main__.main                                   %
+17:59:59.62  tag function: __main__.main                                   %
+17:59:59.66   ______
+        #1   | 6.1 %|  <module>                         conseqDivs.py:1
+        #2   | 4.8 %|  main                             conseqDivs.py:76
+        #3   | 4.2 %|  getSigmaZero                     conseqDivs.py:60
+17:59:59.70  tag function: __main__.main                                   %
+17:59:59.79  tag function: __main__.main                                   %
+17:59:59.86   ______
+        #1   | 8.1 %|  <module>                         conseqDivs.py:1
+        #2   | 7.5 %|  getSigmaZero                     conseqDivs.py:60
+17:59:59.89  tag function: __main__.main                                   %
+17:59:59.92  tag function: __main__.<module>                               %
+17:59:59.98  tag function: __main__.getSigmaZero                           %
+17:59:59.99  tag function: __main__.main                                   %
+18:00:00.06   ______
+        #1   | 6.3 %|  main                             conseqDivs.py:76
+        #2   | 3.4 %|  <module>                         conseqDivs.py:1
+        #3   | 1.6 %|  getSigmaZero                     conseqDivs.py:60
+18:00:00.10  tag function: __main__.main                                   %
+18:00:00.19  tag function: __main__.main                                   %
+18:00:00.27   ______
+        #1   | 7.0 %|  <module>                         conseqDivs.py:1
+        #2   | 6.8 %|  main                             conseqDivs.py:76
+        #3   | 5.1 %|  getSigmaZero                     conseqDivs.py:60
+18:00:00.30  tag function: __main__.main                                   %
+18:00:00.40  tag function: __main__.main                                   %
+18:00:00.43  tag function: __main__.<module>                               %
+18:00:00.48   ______
+        #1   | 7.7 %|  getSigmaZero                     conseqDivs.py:60
+18:00:00.51  tag function: __main__.main                                   %
+18:00:00.61  tag function: __main__.main                                   %
+18:00:00.61  tag function: __main__.getSigmaZero                           %
+18:00:00.68   ______
+        #1   | 6.9 %|  main                             conseqDivs.py:76
+        #2   | 5.5 %|  <module>                         conseqDivs.py:1
+        #3   | 1.5 %|  getSigmaZero                     conseqDivs.py:60
+18:00:00.71  tag function: __main__.main                                   %
+18:00:00.81  tag function: __main__.main                                   %
+18:00:00.89   ______
+        #1   | 8.1 %|  <module>                         conseqDivs.py:1
+        #2   | 6.7 %|  main                             conseqDivs.py:76
+        #3   | 5.1 %|  getSigmaZero                     conseqDivs.py:60
+18:00:00.91  tag function: __main__.main                                   %
+18:00:00.96  tag function: __main__.<module>                               %
+18:00:01.03  tag function: __main__.main                                   %
+18:00:01.09   ______
+        #1   | 7.8 %|  getSigmaZero                     conseqDivs.py:60
+18:00:01.14  tag function: __main__.main                                   %
+18:00:01.20  tag function: __main__.getSigmaZero                           %
+18:00:01.24  tag function: __main__.main                                   %
+18:00:01.24   ______
+        #1   | 5.0 %|  <module>                         conseqDivs.py:1
+        #2   | 0.9 %|  getSigmaZero                     conseqDivs.py:60
+18:00:01.34  tag function: __main__.main                                   %
+18:00:01.44  tag function: __main__.main                                   %
+18:00:01.44   ______
+        #1   | 8.1 %|  <module>                         conseqDivs.py:1
+        #2   | 4.5 %|  getSigmaZero                     conseqDivs.py:60
+18:00:01.56  tag function: __main__.<module>                               %
+18:00:01.58  tag function: __main__.main                                   %
+18:00:01.65   ______
+        #1   | 7.2 %|  getSigmaZero                     conseqDivs.py:60
+18:00:01.67  tag function: __main__.main                                   %
+18:00:01.77  tag function: __main__.main                                   %
+18:00:01.81  tag function: __main__.getSigmaZero                           %
+18:00:01.85   ______
+        #1   | 6.4 %|  main                             conseqDivs.py:76
+        #2   | 5.7 %|  <module>                         conseqDivs.py:1
+        #3   | 0.9 %|  getSigmaZero                     conseqDivs.py:60
+18:00:01.88  tag function: __main__.main                                   %
+18:00:01.98  memory usage: 20+ kb                                          %
+18:00:01.98  program exit, 07/06/09                     %%%%%%%%%%%%%%%%%%%%

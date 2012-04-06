@@ -1,0 +1,27 @@
+void Foo(int i, double d)
+{
+  WRITE "VERSION BIPARAMETRO";
+  int x;
+  int y;
+  
+  WRITE i;
+  WRITE d;
+
+  return;
+}
+void Foo(int i){
+  WRITE "VERSION MONOPARAMETRO";
+  WRITE i;
+
+  return;
+}
+
+int Main()
+{
+  int param;
+  param = 14;
+  Foo(14, 14.23);
+  Foo((int)(41+5.2),3+4.5);
+
+  return 0;
+}

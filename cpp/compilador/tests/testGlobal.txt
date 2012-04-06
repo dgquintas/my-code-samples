@@ -1,0 +1,33 @@
+int i;
+
+int devuelveGlobal()
+{
+  return i;
+}
+void setGlobal(int x)
+{
+  i = x;
+  return;
+}
+
+void Main()
+{
+  int i;
+  i = 15;
+
+  WRITE "Local:";
+  WRITE i;
+  WRITE "";
+  WRITE "Global antes de modificar:";
+  WRITE devuelveGlobal();
+  setGlobal(48);
+  WRITE "Global tras modificar:";
+  WRITE devuelveGlobal(); 
+  WRITE "Local:";
+  WRITE i;
+
+
+  
+
+  return;
+}

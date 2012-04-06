@@ -1,0 +1,6 @@
+// ex2.calc -- error: n is not declared
+var x: integer;
+var y: integer;
+n := 2;
+x := n+3;
+print(x);

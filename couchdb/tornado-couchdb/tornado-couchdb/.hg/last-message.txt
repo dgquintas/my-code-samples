@@ -1,0 +1,2 @@
+bugfix: fixed message handling in CouchException
+

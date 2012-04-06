@@ -1,0 +1,17 @@
+#Fri May 23 00:41:27 CEST 2008
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.templates_migrated=true
+proposalOrderMigrated=true
+tabWidthPropagated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+useAnnotationsPrefPage=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Runnable"><rhs name\="threading.WaitAndNotify$Hilo"/><rhs name\="threading.DinningPhilosophers$Philosopher"/></lhs><lhs name\="threading.WaitAndNotify$SharedResource"><rhs name\="threading.WaitAndNotify$SharedResource"/></lhs><lhs name\="java.lang.Thread"><rhs name\="threading.DinningPhilosophers$Philosopher"/></lhs><lhs name\="threading.DinningPhilosophers$Philosopher"><rhs name\="threading.DinningPhilosophers$Philosopher"/></lhs><lhs name\="threading.DinningPhilosophers"><rhs name\="threading.DinningPhilosophers"/></lhs><lhs name\="threading.DinningPhilosophers$Chopsticks"><rhs name\="threading.DinningPhilosophers$Chopsticks"/></lhs></history>
+org.eclipse.jface.textfont=1|Terminus|11|0|GTK|1|;
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=10
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+eclipse.preferences.version=1
+internal.default.compliance=default
+fontPropagated=true

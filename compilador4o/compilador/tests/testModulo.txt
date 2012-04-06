@@ -1,0 +1,17 @@
+void Main()
+{
+  int i;
+  i=0;
+
+  WRITE "MULTIPLOS DE 3:";
+  while(i<100){
+    int k;
+    k = i%3;
+    if ( k == 0){
+      WRITE i;
+    }
+    i = i+1;
+  }
+
+  return;
+}

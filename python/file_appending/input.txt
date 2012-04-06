@@ -1,0 +1,14 @@
+blablabla 
+habia una vez un circo
+0
+#pragma __libmpplas_manual_include DEF1
+  #include "inc"
+1
+#pragma __libmpplas_manual_include DEF2
+  #include "inc2"
+2
+que alegraba siempre el corazon
+
+y chimpon
+fin
+EOF

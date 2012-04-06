@@ -1,0 +1,19 @@
+int Main()
+{
+  struct foobar{
+    double secs;
+    int minutos;
+  } TPO[2];
+  
+  TPO[0].minutos = 60;
+  TPO[0].secs = 3.141592;
+
+  TPO[1].minutos = 6;
+  TPO[1].secs = 0.141592;
+
+  WRITE TPO[0].minutos;
+  WRITE TPO[1].secs;
+  
+  return 0;
+}
+  

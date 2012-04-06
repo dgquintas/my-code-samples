@@ -1,0 +1,113 @@
+<!--
+____________________________________________________________
+|                                                            |
+|    DESIGN + Pat Heard { http://fullahead.org }             |
+|      DATE + 2006.03.19                                     |
+| COPYRIGHT + Free use if this notice is left in place       |
+|____________________________________________________________|
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+
+  <head>
+    <title>*void -> {% block title %}NULL{% endblock %} </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta name="author" content="bofh@ptrtovoid.net" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow, noarchive" />
+    <meta name="googlebot" content="noarchive" />
+    
+    <link rel="alternate" type="application/rss+xml" title="ptrtovoid.net/blog RSS" href="/blog/feeds/rss"/>
+    <link rel="alternate" type="application/atom+xml" title="ptrtovoid.net/blog Atom" href="/blog/feeds/atom"/>
+
+    <link rel="stylesheet" type="text/css" href="/site-media/css/html.css" media="screen, projection, tv " />
+    <link rel="stylesheet" type="text/css" href="/site-media/css/layout.css" media="screen, projection, tv" />
+    <link rel="stylesheet" type="text/css" href="/site-media/css/print.css" media="print" />
+
+    
+
+    {% block style %}{% endblock %}
+
+  </head>
+
+  <body>
+
+    <!-- CONTENT: Holds all site content except for the footer.  
+    This is what causes the footer to stick to the bottom -->
+    <div id="content">
+
+      <!-- HEADER: Holds title, subtitle and header images -->
+      <div id="header">
+
+        <div id="title">
+          <h1>Dangling Pointers</h1>
+          <h2>*void ptr = 0x0</h2>
+        </div>
+
+        <img src="/site-media/images/bg/moon.png" alt="moon" class="moon" />
+        <img src="/site-media/images/bg/header_left2.jpg" alt="left slice" class="left" />
+
+      </div>
+
+      <!-- MAIN MENU: Top horizontal menu of the site.  Use class="here" to turn the current page tab on -->
+      <div id="mainMenu">
+        <ul class="floatRight">
+          <li><a href="/" title="Home" class="{% block hereHome %}{% endblock %}">Home</a></li>
+          <li><a href="/blog/" title="Blog" class="{% block hereBlog %}{% endblock %}">Blog</a></li>
+<!--          <li><a href="tags.html" title="View the styled tags">Tags</a></li>
+          <li><a href="print.html" title="View the print layout">Print</a></li>
+          <li><a href="http://fullahead.org/contact.html" title="Get in touch" class="last">Mail</a></li>
+-->
+        </ul>
+      </div>
+
+      <!-- PAGE CONTENT BEGINS: 
+      This is where you would define the columns (number, width and alignment) -->
+      <div id="page">
+
+        <div class="width25 floatRight">
+          {% block sidebar %}
+          {% endblock sidebar%}
+        </div>
+
+      
+        <div class="width75 floatLeft">
+          {% block contents %}
+          {% endblock contents %}
+        </div>
+
+      </div> <!-- page -->
+    </div> <!-- content -->
+
+    <!-- FOOTER: Site footer for links, copyright, etc. -->
+    <div id="footer">
+
+      <div id="width">
+        <span class="floatLeft">
+          valid <a href="http://validator.w3.org/check?uri=referer" title="Validate XHTML">XHTML</a> <span class="grey">|</span>
+          valid <a href="http://jigsaw.w3.org/css-validator/check/referer/" title="Validate CSS">CSS</a>
+        </span>
+
+        <span class="floatRight">
+          <!--
+          <a href="index.html" title="Introduction">intro</a> <span class="grey">|</span>
+          <a href="help.html" title="Learn how to use the template">help</a> <span class="grey">|</span>
+          <a href="tags.html" title="View the styled tags">tags</a> <span class="grey">|</span>
+          <a href="print.html" title="View the print layout">print</a> <span class="grey">|</span>
+          -->
+          This is an <a href="http://www.oswd.org" title="Open Source Web Design">OSWD</a>. Check src for details <span class="grey">|</span>
+          <a href="/contact/" title="Get in touch">contact</a>
+        </span>
+      </div>  <!-- footer -->
+
+    </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+<html>
+  <body>
+    {% if tag %}
+    <h2>Posts pa tag {{ tag }}</h2>
+    {% endif %}
+    {% for entry in entries %}
+    <p><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a> ({{ entry.comment_set.count  }})</p>
+    {% endfor %}
+
+    {% if newer_page %}
+      {% url blog-list-page newer_page as newer %}
+      hay <a href="{{ newer }}">newer</a>
+    {% endif %}
+
+    {% if older_page %}
+      {% url blog-list-page older_page as older %}
+      hay <a href="{{ older }}">older</a>
+    {% endif %}
+
+  </body>
+</html>

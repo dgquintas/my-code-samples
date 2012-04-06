@@ -1,0 +1,139 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CAMPO_H	campo.h	2;"	d
+Campo	campo.cpp	/^Campo::Campo(std::string nombre, Tipo* tipo)$/;"	f	class:Campo
+Campo	campo.cpp	/^Campo::Campo(std::string nombre, Tipo* tipo, int desplazamiento)$/;"	f	class:Campo
+Campo	campo.h	/^class Campo {$/;"	c
+SIMBOLO_H	simbolo.h	2;"	d
+Simbolo	simbolo.cpp	/^Simbolo::Simbolo(std::string nombre)$/;"	f	class:Simbolo
+Simbolo	simbolo.cpp	/^Simbolo::Simbolo(std::string nombre, Tipo* tipo)$/;"	f	class:Simbolo
+Simbolo	simbolo.cpp	/^Simbolo::Simbolo(std::string nombre, Tipo* tipo, int despBP) $/;"	f	class:Simbolo
+Simbolo	simbolo.h	/^class Simbolo {$/;"	c
+TABLASIMBOLOS_H	tablasimbolos.h	2;"	d
+TABLATIPOS_H	tablatipos.h	2;"	d
+TIPOARRAY_H	tipoarray.h	2;"	d
+TIPOARRAY_H	tipostring.h	2;"	d
+TIPODOUBLE_H	tipodouble.h	2;"	d
+TIPOFUNCION_H	tipofuncion.h	2;"	d
+TIPOINT_H	tipoint.h	2;"	d
+TIPOSTRUCT_H	tipostruct.h	2;"	d
+TIPOVOID_H	tipovoid.h	2;"	d
+TIPO_H	tipo.h	2;"	d
+TablaSimbolos	tablasimbolos.cpp	/^TablaSimbolos::TablaSimbolos()$/;"	f	class:TablaSimbolos
+TablaSimbolos	tablasimbolos.h	/^class TablaSimbolos {$/;"	c
+TablaTipos	tablatipos.cpp	/^TablaTipos::TablaTipos()$/;"	f	class:TablaTipos
+TablaTipos	tablatipos.h	/^class TablaTipos {$/;"	c
+Tipo	tipo.h	/^class Tipo {$/;"	c
+TipoArray	tipoarray.cpp	/^TipoArray::TipoArray(Tipo* tipo, unsigned int tam)$/;"	f	class:TipoArray
+TipoArray	tipoarray.cpp	/^TipoArray::TipoArray(unsigned int tam)$/;"	f	class:TipoArray
+TipoArray	tipoarray.h	/^class TipoArray: public Tipo {$/;"	c
+TipoDouble	tipodouble.cpp	/^TipoDouble::TipoDouble()$/;"	f	class:TipoDouble
+TipoDouble	tipodouble.h	/^class TipoDouble: public Tipo {$/;"	c
+TipoExpr	tipo.h	/^} TipoExpr;$/;"	t
+TipoFuncion	tipofuncion.cpp	/^TipoFuncion::TipoFuncion()$/;"	f	class:TipoFuncion
+TipoFuncion	tipofuncion.h	/^class TipoFuncion: public Tipo {$/;"	c
+TipoInt	tipoint.cpp	/^TipoInt::TipoInt()$/;"	f	class:TipoInt
+TipoInt	tipoint.h	/^class TipoInt: public Tipo {$/;"	c
+TipoString	tipostring.cpp	/^TipoString::TipoString(unsigned int tam)$/;"	f	class:TipoString
+TipoString	tipostring.h	/^class TipoString: public Tipo {$/;"	c
+TipoStruct	tipostruct.cpp	/^TipoStruct::TipoStruct()$/;"	f	class:TipoStruct
+TipoStruct	tipostruct.h	/^class TipoStruct: public Tipo {$/;"	c
+TipoVoid	tipovoid.cpp	/^TipoVoid::TipoVoid()$/;"	f	class:TipoVoid
+TipoVoid	tipovoid.h	/^class TipoVoid: public Tipo {$/;"	c
+_listaComponentes	tipostruct.h	/^    std::vector < Campo* > _listaComponentes;$/;"	m	class:TipoStruct
+_tam	tipostruct.h	/^    size_t _tam;$/;"	m	class:TipoStruct
+admitePunto	tipo.h	/^    virtual bool admitePunto() { return false; };$/;"	f	class:Tipo
+admitePunto	tipostruct.h	/^    virtual bool admitePunto() { return true; }; $/;"	f	class:TipoStruct
+buscar	tablasimbolos.cpp	/^Simbolo* TablaSimbolos::buscar ( std::string nombre )$/;"	f	class:TablaSimbolos
+buscar	tablatipos.cpp	/^Tipo* TablaTipos::buscar ( std::string nombre )$/;"	f	class:TablaTipos
+buscar	tipostruct.cpp	/^Campo* TipoStruct::buscar(std::string nombre)$/;"	f	class:TipoStruct
+buscarEnBloque	tablasimbolos.cpp	/^Simbolo* TablaSimbolos::buscarEnBloque( std::string nombre )$/;"	f	class:TablaSimbolos
+calcularM	tipofuncion.cpp	/^int TipoFuncion::calcularM(void)$/;"	f	class:TipoFuncion
+cargado	tipo.h	/^  bool cargado;$/;"	m
+desplazamiento	campo.h	/^    int desplazamiento;$/;"	m	class:Campo
+dimension	simbolo.h	/^    size_t dimension;$/;"	m	class:Simbolo
+direccion	simbolo.h	/^    size_t direccion;$/;"	m	class:Simbolo
+esImprimible	tipo.h	/^    virtual bool esImprimible() { return false; };$/;"	f	class:Tipo
+esImprimible	tipodouble.h	/^    virtual bool esImprimible() { return true; };$/;"	f	class:TipoDouble
+esImprimible	tipoint.h	/^    virtual bool esImprimible() { return true; }; $/;"	f	class:TipoInt
+estructuraLocal	simbolo.h	/^    bool estructuraLocal;$/;"	m	class:Simbolo
+getCampo	tipostruct.cpp	/^Campo* TipoStruct::getCampo(int i)$/;"	f	class:TipoStruct
+getDesplazamiento	campo.cpp	/^int Campo::getDesplazamiento()$/;"	f	class:Campo
+getDimension	simbolo.cpp	/^unsigned int Simbolo::getDimension()$/;"	f	class:Simbolo
+getDireccion	simbolo.cpp	/^unsigned int Simbolo::getDireccion (  )$/;"	f	class:Simbolo
+getGlobal	simbolo.h	/^    bool getGlobal() {return global;};$/;"	f	class:Simbolo
+getLocalStruct	simbolo.h	/^    bool getLocalStruct () { return estructuraLocal; };$/;"	f	class:Simbolo
+getLvalue	simbolo.h	/^    bool getLvalue() { return lvalue; };$/;"	f	class:Simbolo
+getNombre	campo.cpp	/^std::string Campo::getNombre()$/;"	f	class:Campo
+getNombre	simbolo.cpp	/^std::string Simbolo::getNombre (  )$/;"	f	class:Simbolo
+getNombre	tipoarray.h	/^    virtual string getNombre() { return "array";};$/;"	f	class:TipoArray
+getNombre	tipodouble.h	/^    virtual std::string getNombre() { return "double";};$/;"	f	class:TipoDouble
+getNombre	tipofuncion.h	/^    virtual std::string getNombre() {return "funcion";}$/;"	f	class:TipoFuncion
+getNombre	tipoint.h	/^    virtual std::string getNombre() { return "int";};$/;"	f	class:TipoInt
+getNombre	tipostruct.h	/^    virtual std::string getNombre() { return "struct"; };$/;"	f	class:TipoStruct
+getNombre	tipovoid.h	/^    virtual std::string getNombre() {return "void";};$/;"	f	class:TipoVoid
+getParametro	tipofuncion.cpp	/^Simbolo* TipoFuncion::getParametro(int i)$/;"	f	class:TipoFuncion
+getPrefijo	tipo.h	/^    virtual char getPrefijo() { return 0; };$/;"	f	class:Tipo
+getPrefijo	tipodouble.h	/^    virtual char getPrefijo() { return 'F';}; $/;"	f	class:TipoDouble
+getPrefijo	tipoint.h	/^    virtual char getPrefijo() { return 'I';};$/;"	f	class:TipoInt
+getTam	tipoarray.cpp	/^unsigned int TipoArray::getTam (  )$/;"	f	class:TipoArray
+getTam	tipodouble.cpp	/^unsigned int TipoDouble::getTam (  )$/;"	f	class:TipoDouble
+getTam	tipofuncion.cpp	/^unsigned int TipoFuncion::getTam (  ){$/;"	f	class:TipoFuncion
+getTam	tipoint.cpp	/^unsigned int TipoInt::getTam (  )$/;"	f	class:TipoInt
+getTam	tipostring.cpp	/^unsigned int TipoString::getTam (  )$/;"	f	class:TipoString
+getTam	tipostruct.cpp	/^unsigned int TipoStruct::getTam (  ){$/;"	f	class:TipoStruct
+getTam	tipovoid.cpp	/^unsigned int TipoVoid::getTam (  )$/;"	f	class:TipoVoid
+getTipo	campo.cpp	/^Tipo* Campo::getTipo()$/;"	f	class:Campo
+getTipo	simbolo.cpp	/^Tipo* Simbolo::getTipo (  )$/;"	f	class:Simbolo
+getTipo	tipoarray.cpp	/^Tipo* TipoArray::getTipo (  )$/;"	f	class:TipoArray
+getTipo	tipofuncion.cpp	/^Tipo* TipoFuncion::getTipo(void)$/;"	f	class:TipoFuncion
+getUltimaDir	simbolo.h	/^    static size_t getUltimaDir(void) { return ultimaDireccion; };$/;"	f	class:Simbolo
+global	simbolo.h	/^    bool global;$/;"	m	class:Simbolo
+insertar	tablasimbolos.cpp	/^void TablaSimbolos::insertar ( Simbolo *simbolo )$/;"	f	class:TablaSimbolos
+insertar	tablatipos.cpp	/^void TablaTipos::insertar ( std::string nombre, Tipo* tipo )$/;"	f	class:TablaTipos
+insertar	tipofuncion.cpp	/^void TipoFuncion::insertar(Simbolo* simbolo)$/;"	f	class:TipoFuncion
+insertar	tipostruct.cpp	/^void TipoStruct::insertar(Campo* campo)$/;"	f	class:TipoStruct
+insertar	tipostruct.cpp	/^void TipoStruct::insertar(std::string nombre, Tipo* tipo)$/;"	f	class:TipoStruct
+listaParametros	tipofuncion.h	/^    std::vector < Simbolo* > listaParametros;$/;"	m	class:TipoFuncion
+lvalue	simbolo.h	/^    bool lvalue;$/;"	m	class:Simbolo
+lvalue	tipo.h	/^  bool lvalue;$/;"	m
+nombre	campo.h	/^    std::string nombre;$/;"	m	class:Campo
+nombre	simbolo.h	/^    std::string nombre;$/;"	m	class:Simbolo
+numeroParametros	tipofuncion.cpp	/^int TipoFuncion::numeroParametros(void)$/;"	f	class:TipoFuncion
+reset	tablasimbolos.cpp	/^void TablaSimbolos::reset (  )$/;"	f	class:TablaSimbolos
+resetUltimaDir	simbolo.h	/^    static void resetUltimaDir(void) { ultimaDireccion = 0; }$/;"	f	class:Simbolo
+set	tablasimbolos.cpp	/^void TablaSimbolos::set (  )$/;"	f	class:TablaSimbolos
+setDesplazamiento	campo.cpp	/^void Campo::setDesplazamiento(int desp)$/;"	f	class:Campo
+setDimension	simbolo.cpp	/^void Simbolo::setDimension(unsigned int dim)$/;"	f	class:Simbolo
+setGlobal	simbolo.h	/^    void setGlobal() { global = true;};$/;"	f	class:Simbolo
+setLocalStruct	simbolo.h	/^    void setLocalStruct () { estructuraLocal = true; };$/;"	f	class:Simbolo
+setLvalue	simbolo.h	/^    void setLvalue(bool lv) { lvalue = lv; };$/;"	f	class:Simbolo
+setTipo	simbolo.cpp	/^void Simbolo::setTipo ( Tipo* tipo )$/;"	f	class:Simbolo
+setTipo	tipoarray.cpp	/^void TipoArray::setTipo( Tipo* tipo )$/;"	f	class:TipoArray
+setTipo	tipofuncion.cpp	/^void TipoFuncion::setTipo(Tipo* tipo)$/;"	f	class:TipoFuncion
+tabla	tablasimbolos.h	/^    std::vector< std::map < std::string, Simbolo *>* > tabla;$/;"	m	class:TablaSimbolos
+tabla	tablatipos.h	/^    std::map < std::string, Tipo* > tabla;$/;"	m	class:TablaTipos
+tam	tipoarray.h	/^    unsigned int tam;$/;"	m	class:TipoArray
+tam	tipodouble.cpp	/^unsigned int TipoDouble::tam = 4;$/;"	m	class:TipoDouble	file:
+tam	tipodouble.h	/^    static unsigned int tam;$/;"	m	class:TipoDouble
+tam	tipofuncion.h	/^    size_t tam;$/;"	m	class:TipoFuncion
+tam	tipoint.cpp	/^unsigned int TipoInt::tam = 2;$/;"	m	class:TipoInt	file:
+tam	tipoint.h	/^    static size_t tam ;$/;"	m	class:TipoInt
+tam	tipostring.h	/^    unsigned int tam;$/;"	m	class:TipoString
+tam	tipovoid.cpp	/^unsigned int TipoVoid::tam = 1;$/;"	m	class:TipoVoid	file:
+tam	tipovoid.h	/^    static unsigned int tam ;$/;"	m	class:TipoVoid
+tipo	campo.h	/^    Tipo* tipo;$/;"	m	class:Campo
+tipo	simbolo.h	/^    Tipo* tipo;$/;"	m	class:Simbolo
+tipo	tipo.h	/^  Tipo* tipo;$/;"	m
+tipo	tipoarray.h	/^    Tipo* tipo;$/;"	m	class:TipoArray
+tipoRetorno	tipofuncion.h	/^    Tipo* tipoRetorno;    $/;"	m	class:TipoFuncion
+ultimaDireccion	simbolo.cpp	/^unsigned int Simbolo::ultimaDireccion = 0;$/;"	m	class:Simbolo	file:
+ultimaDireccion	simbolo.h	/^    static size_t ultimaDireccion;$/;"	m	class:Simbolo
+~TablaSimbolos	tablasimbolos.cpp	/^TablaSimbolos::~TablaSimbolos()$/;"	f	class:TablaSimbolos
+~TablaTipos	tablatipos.cpp	/^TablaTipos::~TablaTipos()$/;"	f	class:TablaTipos
+~TipoFuncion	tipofuncion.cpp	/^TipoFuncion::~TipoFuncion()$/;"	f	class:TipoFuncion
+~TipoStruct	tipostruct.cpp	/^TipoStruct::~TipoStruct()$/;"	f	class:TipoStruct

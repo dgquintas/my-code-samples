@@ -1,0 +1,26 @@
+void Main()
+{
+  struct structConArray_t {
+    double arr[12];
+    int a[12];
+  } structConArray;
+
+  int i;
+  i=0;
+  while( i < 12){
+    structConArray.a[i] = i;
+    structConArray.arr[i] = 3.1415;
+    i = i+1;
+  }
+ 
+  i=0;
+  while( i < 10 ){
+    WRITE structConArray.a[i];
+    WRITE structConArray.arr[i] * structConArray.a[i];
+    WRITE "";
+    i = i+1;
+  }
+
+  
+  return;
+}

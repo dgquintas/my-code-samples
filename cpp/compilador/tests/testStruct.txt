@@ -1,0 +1,21 @@
+#este programa ademas pone "a prueba" el trabajar con estructuras 
+#de datos grandes
+int Main()
+{
+  struct dia_t {
+    struct hora_t {
+      int minuto[60];
+      double segundo[3600];
+    } hora;
+  } dia;
+
+  dia.hora.minuto[30] = 1;
+  dia.hora.segundo[1234] = 4321;
+  
+  WRITE dia.hora.minuto[30];
+  WRITE dia.hora.segundo[1234];
+ 
+  
+  return 0;
+}
+  

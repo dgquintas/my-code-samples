@@ -1,0 +1,48 @@
+{% load get_latest %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+	<head>
+		<title>My Site - {%block pagetitle %}{% endblock %}</title>
+	</head>
+	<body>
+		<div id="header">My Site</div>
+		<div id="nav">
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/links/">Links</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="primary">
+				<h1>{% block title %}{% endblock %}</h1>
+				{% block primary %}{% endblock %}
+			</div>
+			<div id="secondary">
+                <h3>Recent Entries:</h3>
+                {% get_latest blog.Entry 5 as recent_posts %}
+                <ul class="archive">
+                    {% for obj in recent_posts %}
+                    <li>
+                    <a href="{{ obj.get_absolute_url }}" title="Permanent Link to {{ obj.title}}">{{ obj.title}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <h3>Recent Delicious Links</h3>
+                {% get_latest links.Link 10 as recent_links %}
+                <ul class="archive">
+                    {% for obj in recent_links %}
+                    <li>
+                    <a href="{{ obj.url }}" title="{{ obj.title}}">{{ obj.title}}</a>{{object.description}} Posted on {{obj.date|date:"D d M Y"}}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+
+
+			<div>
+		</div>
+	</body>
+</html>
+

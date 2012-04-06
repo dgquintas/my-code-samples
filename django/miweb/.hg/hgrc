@@ -1,0 +1,5 @@
+[ui]
+username = dgquintas <dgquintas@gmail.com>
+
+[paths]
+default = ssh://hg@bitbucket.org/dgquintas/website

@@ -1,0 +1,25 @@
+int soyglobal;
+
+void Foo(int a, int b){
+  int k;
+  k = a+b;
+  
+}
+
+int Main() {
+  int a;
+  int b;
+
+  a = 14;
+  b = 14;
+
+  int c;
+
+  c  = soyglobal+b;
+
+  
+  Foo(1,2);
+  
+  WRITE c;
+}
+  

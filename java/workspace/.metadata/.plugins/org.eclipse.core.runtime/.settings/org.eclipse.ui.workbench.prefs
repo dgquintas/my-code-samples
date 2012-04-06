@@ -1,0 +1,6 @@
+#Sun May 04 18:31:45 CEST 2008
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.jdt.ui.presentation
+RUN_IN_BACKGROUND=true
+eclipse.preferences.version=1
+org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.editors.textfont=1|Terminus|11|0|GTK|1|;
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.editors.textfont

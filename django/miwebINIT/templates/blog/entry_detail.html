@@ -1,0 +1,87 @@
+{% extends "blog/base_blog.html" %}
+{% load get_related_entries %}
+
+{% block title %}blog -> {{ entry.title }} {% endblock %}
+
+{% block sidebar %}
+<h1>Navigate:</h1>
+<ul class="sideMenu">
+  {% if entry.get_next_published %}
+  <li><a href="{{ entry.get_next_published.get_absolute_url }}"><b>Next: </b>{{ entry.get_next_published.title }}</a> </li>
+  {% endif %}
+
+  {% if entry.get_previous_published %}
+  <li><a href="{{ entry.get_previous_published.get_absolute_url }}"><b>Previous: </b>{{ entry.get_previous_published.title }}</a></li>
+  {% endif %}
+</ul>
+  {{ block.super }}
+{% endblock %}
+
+
+{% block contents %}
+
+{% include "blog/display_entry.html" %}
+
+{% get_related_entries entry as related_entries %}
+<h1>Related entries:</h1>
+<ul>
+{% for related_entry in related_entries %}
+<li><a href="{{related_entry.get_absolute_url}}">{{ related_entry }}</a> ({{related_entry.snip}}). 
+Published on {{ related_entry.pub_date|date }}.
+</li>
+{% endfor %}
+</ul>
+
+
+<h1>Comments</h1><a name="comments"></a>
+{% if entry.comment_set.all %}
+{% for comment in entry.comment_set.all %}
+<blockquote>
+  <a name="{{ comment.COMMENT_ANCHOR }}{{ comment.id }}"></a>
+  <h2>By {{ comment.who }} on {{ comment.when }}. <small>( <a href="{{ comment.get_absolute_url }}">link</a> )</small></h2> 
+  <p>
+  {{ comment.what }}
+  </blockquote>
+  {% endfor %}
+  {% else %}
+  <p>
+  No comments for this entry (yet!)
+  </p>
+{% endif %}
+<h1>Add yours:</h1>
+<form method="post" action="{% url blog-post-comment %}">
+  <input type="hidden" name="entry-id" value="{{ entry.id }}" />
+  <p>
+  <label for="entry-name">What's your name?</label>
+  <input name="who" id="entry-name" maxlength="40" class="width50" type="text" />
+  </p>
+  <p>
+  <label for="entry-text">Your comment:</label>
+  <textarea id="entry-text" rows="8" class="width75" name="what"></textarea>
+  </p>
+  <p>
+  You can use <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>.
+  </p>
+  <h2>You're going to say:</h2>
+  <blockquote>
+  <div class="wmd-preview width75"></div>
+  </blockquote>
+  <p>
+  <input name="submit" type="submit" value="Comment" />
+  </p>
+</form>
+
+
+
+
+<script type="text/javascript">
+    wmd_options = {
+        output: "Markdown",
+        buttons: "bold italic | link blockquote code | ol ul heading hr"
+    };
+</script>
+<script type="text/javascript"
+        src="/site-media/scripts/wmd/wmd.js"></script>
+
+
+{% endblock %}

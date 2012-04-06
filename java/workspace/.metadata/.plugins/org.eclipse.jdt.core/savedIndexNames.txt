@@ -1,0 +1,8 @@
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/373299692.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/2466700039.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/3244682478.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/4014571458.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/3473475372.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/847186027.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/3227759663.index
+/home/dgquintas/samples/java/workspace/.metadata/.plugins/org.eclipse.jdt.core/2932179046.index

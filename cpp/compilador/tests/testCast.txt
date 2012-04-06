@@ -1,0 +1,13 @@
+int Main()
+{
+  int i;
+  double d;
+
+  READ i;
+  READ d;
+
+  WRITE (double)i;
+  WRITE (int)d;
+
+  return 0;
+}

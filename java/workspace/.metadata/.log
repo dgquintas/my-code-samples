@@ -1,0 +1,312 @@
+!SESSION 2008-05-04 18:16:38.947 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-04 18:16:48.372
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-04 18:16:48.408
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-04 18:16:48.408
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-04 18:16:48.408
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-04 18:46:12.174
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+!SESSION 2008-05-22 21:38:04.828 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-22 21:38:12.380
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-22 21:38:12.381
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-22 21:38:12.382
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-22 21:38:12.382
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-23 00:21:01.672
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-23 00:26:48.345
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+!SESSION 2008-05-23 18:42:13.466 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-23 18:42:28.004
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-23 18:42:28.020
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-23 18:42:28.020
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-23 18:42:28.021
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.help.base 4 0 2008-05-23 18:47:54.080
+!MESSAGE Failed launching help.  Documentation is not installed.
+!SESSION 2008-05-24 16:41:06.943 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 16:41:12.973
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 16:41:12.991
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 16:41:12.991
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 16:41:12.992
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 16:51:49.793
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 17:33:46.933
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 17:48:55.894
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 17:59:27.131
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 18:06:04.004
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 18:15:59.960
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 18:36:16.195
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+!SESSION 2008-05-24 23:30:33.657 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 23:30:39.623
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 23:30:39.641
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 23:30:39.641
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-24 23:30:39.642
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.debug.core 4 120 2008-05-24 23:31:18.379
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:194)
+	at java.lang.Thread.run(Thread.java:619)
+!SESSION 2008-05-25 12:32:45.814 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-25 12:32:50.586
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-25 12:32:50.586
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-25 12:32:50.587
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-25 12:32:50.587
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+!SESSION 2008-05-26 20:27:48.250 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-26 20:27:53.400
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-26 20:27:53.401
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-26 20:27:53.401
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-05-26 20:27:53.402
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+!SESSION 2008-06-22 11:02:28.585 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_06
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-06-22 11:02:37.736
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-06-22 11:02:37.737
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-06-22 11:02:37.737
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-06-22 11:02:37.737
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages

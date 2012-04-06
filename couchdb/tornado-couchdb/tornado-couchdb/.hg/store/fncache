@@ -1,0 +1,3 @@
+data/.hgignore.i
+data/couch.py.i
+data/tests.py.i

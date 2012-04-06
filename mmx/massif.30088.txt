@@ -1,0 +1,3 @@
+Command: ./a.out
+
+(No heap memory allocated)

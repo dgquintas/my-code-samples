@@ -1,0 +1,26 @@
+LIMIT = 1e6;
+
+maxN = maxAcum = 0;
+/* TODO: GIVE A SENSIBLE UPPER BOUND FOR npExt */
+for(npExt = 1; npExt < 100 ; npExt++){
+  acum = 0;
+  np = nextprime(npExt); 
+  n = 1;
+  while( acum + np < LIMIT ){
+    acum += np;
+    if( isprime(acum) ){
+      if(n > maxN){
+        maxN = n;
+        maxAcum = acum;
+      }
+    }
+    np = nextprime(np);
+    n++;
+  }
+}
+print maxAcum, maxN
+
+
+
+
+

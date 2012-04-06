@@ -1,0 +1,19 @@
+void Main()
+{
+  int entero;
+  double real;
+
+  WRITE "Introducir entero:";
+  READ entero;
+  WRITE "Introducir real:";
+  READ real;
+
+  WRITE "";
+
+  WRITE "Entero introducido:";
+  WRITE entero;
+  WRITE "Real introducido:";
+  WRITE real;
+
+  return;
+}

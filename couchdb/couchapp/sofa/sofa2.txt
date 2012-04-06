@@ -1,0 +1,29 @@
+backport Mustache changes
+test suite
+link code
+  ability to share link code between client and server
+  add a name key to the rewriter paths
+
+  docform as it's own plugin
+
+prune dead code
+
+
+  
+  
+  screens
+    recent posts
+    posts by tag
+    permalink page
+    edit page
+    recent comments
+
+
+
+
+relaxville
+  # copy couchapp to sofa ->
+  urls for links (sammy.js)
+  login / logout
+  (test suite report?)
+  couchapp github project

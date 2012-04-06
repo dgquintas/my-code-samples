@@ -1,0 +1,20 @@
+{% extends "blog/entry_archive.html" %}
+
+{% block contents %}
+{% if tag %}
+<h1>Entries for tag «{{ tag }}»:</h1>
+{% endif %}
+<ul>
+  {% for entry in entries_list %}
+  {% if entry.published %}
+  <p>
+  <a name="{{ entry.slug }}"></a>
+
+  <li><a href="{{ entry.get_absolute_url }}" class="block size4">{{ entry.title|title }}</a>
+  {{ entry.snip  }} ({{ entry.pub_date|date }})
+  </li>
+  </p>
+  {%endif%}
+{% endfor %}
+{% endblock %}
+

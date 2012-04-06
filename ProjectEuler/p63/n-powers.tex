@@ -1,0 +1,71 @@
+%% LyX 1.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section{Problem Text}
+
+The $5$-digit number, $16807=7^{5}$, is also a fifth power. Similarly,
+the $9$-digit number, $134217728=8^{9}$, is a ninth power.
+
+How many $n$-digit positive integers exist which are also an $n$th
+power? 
+
+
+\section{Solution}
+
+A number of the form $x^{y}$ has $\lfloor\log x^{y} \rfloor+1$
+digits in base $10$. We are asked for how many $x,y \in \mathbb{Z}^{+}$ 
+does the following equation hold:
+
+\begin{equation}\label{eq1}
+ \lfloor\log x^{y} \rfloor+1=y
+\end{equation}
+
+Firstly, extract the exponent from the logarith:
+
+\begin{equation} \label{eq2}
+    \lfloor \log x^{y} \rfloor +1 \equiv \lfloor y \cdot \log x \rfloor +1 
+\end{equation}
+
+
+Secondly, get rid of the floor function. By this function's definition:
+\begin{equation} \label{eq3}
+    \lfloor y \cdot \log x \rfloor \leq  y \cdot \log x  < \lfloor y \cdot \log x \rfloor + 1 
+\end{equation}
+Note that by \eqref{eq1}, $\lfloor y \cdot \log x \rfloor = y -1$; likewise $\lfloor y \cdot \log x \rfloor + 1 = y$. 
+Combined with equation \eqref{eq3}, we have:
+\begin{equation} \label{eq4}
+    y-1 \leq y \cdot \log x < y
+\end{equation}
+Dividing the whole expresion by $y$:
+\begin{equation} \label{eqFinal}
+    1-\frac{1}{y} \leq \log x < 1
+\end{equation}
+
+Finally, we have an upper bound for $x$, namely $\log x < 1 \iff x < 10$. 
+
+Regarding the exponent $y$, for all integers $ 0 < x < 10$, \eqref{eqFinal} is
+satisfied if and only if $1-\frac{1}{y} \leq \log x$. Solving for $y$, $y < \frac{1}{1-\log x}$.
+Given that the exponent must be a positive integer, $\lfloor \frac{1}{1-\log x}\rfloor$ represents
+the number of exponents resulting in an $n$-digit number for $0 < x < 10$. 
+
+\paragraph{Python one-liner}
+The following Python code calculates the result based on the previous observations.
+
+\begin{verbatim}
+from math import log10, floor; 
+sum( (floor(1 / (1-log10(i))) for i in xrange(1,10) ) )
+\end{verbatim}
+The result is $49$. 
+
+
+
+\end{document}

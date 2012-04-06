@@ -1,0 +1,50 @@
+void buscaFactores(
+    struct factores_t{
+      int n;
+      int facts[20];
+      int numeroFactores;
+      } factores )
+{
+  int i;
+  i = 2;
+  while(((factores.n % i) != 0) AND ( i <= (factores.n/2.0) ))
+    i = i+1;
+  if( i <= (factores.n/2) ){ 
+    factores.facts[factores.numeroFactores] = i;
+    factores.numeroFactores = factores.numeroFactores+1;
+    factores.n = factores.n/i;
+    buscaFactores(factores);
+  }
+  else
+    factores.facts[factores.numeroFactores] = factores.n;
+    #WRITE n; #ultimo
+  return;
+}
+      
+
+void Main(){
+  struct factores_t factores[5];
+  WRITE "Introducir enteros a factorizar:";
+  int i,j;  i=1;
+  while( i <= 5 ){
+    READ factores[i].n;
+    factores[i].numeroFactores =1;
+    buscaFactores(factores[i]);
+    i = i+1;
+  }
+  j=1; i=1;
+  while( j <= 5 ){
+    WRITE "Factores entontrados. Posicion...";
+    WRITE j;
+    WRITE "-------";
+    while( (i <= factores[j].numeroFactores) AND (i<=20)){
+      WRITE factores[j].facts[i];
+      i = i+1;
+    }
+    j = j+1;
+    i=1;
+  }
+  return;
+}
+
+

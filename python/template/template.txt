@@ -1,0 +1,2 @@
+Let's substitute a $value
+And now as part of a longer word: ${stuff}ification

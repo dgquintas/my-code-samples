@@ -1,0 +1,16 @@
+void Main() {
+  int a;
+  int b;
+
+  a = 14;
+  b = 0;
+
+  WRITE a;
+  WRITE a-1;
+  if( b+1 ){
+    b = a + 1;
+    WRITE b;
+  }
+
+  return;
+}
