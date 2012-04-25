@@ -22,7 +22,7 @@
           var port = $("#port").val();
           var uri = $("#uri").val();
 
-          ws = new MozWebSocket("ws://" + host + ":" + port + uri);
+          ws = new WebSocket("ws://" + host + ":" + port + uri);
 
           ws.onmessage = function(evt) {
               alert("message received: " + evt.data);
