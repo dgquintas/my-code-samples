@@ -1,0 +1,40 @@
+<html>
+<body>
+<script>
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  alert('Great success! All the File APIs are supported.');
+} else {
+  alert('The File APIs are not fully supported in this browser.');
+}
+</script>
+
+<input type="file" id="f_id" name="f_name" />
+<output id="list"></output>
+
+<script>
+  function handleFileSelect(evt) {
+    var file = evt.target.files[0]; // FileList object
+
+    var reader = new FileReader();
+
+    // invoked when load completed. file contents will be available in
+    // FileReader's instance .result property. We have access to that 
+    // through the ev.target field of the event the callback is given
+    reader.onload = function(ev) { 
+        var contents = ev.target.result;
+        var lines = contents.split('\n');
+        var lines_out = lines.map( function(v,i){
+            v = v.trim();
+            if(v){
+                return '<li>' + i + ' -> ' + v + '</li>';
+            }
+        });
+        document.getElementById('list').innerHTML = '<ul>' + lines_out.join('\n') + '</pre>';
+    };
+    reader.readAsText(file);
+  }
+  document.getElementById('f_id').addEventListener('change', handleFileSelect, false);
+
+</script>
+</body>
+<html>

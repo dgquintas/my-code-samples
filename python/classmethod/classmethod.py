@@ -9,6 +9,10 @@ class C(object):
   def printFoo(cls):
     print("cls.foo")
 
+  @classmethod
+  def factory(cls):
+      return cls()
+
 class D(C):
     
     @classmethod
@@ -22,6 +26,8 @@ class D(C):
         print("ADIOSSSSS")
 
 c = C()
+c2 = C.factory()
+print(c2.foo)
 c.printFoo()
 C.printFoo()
 print()

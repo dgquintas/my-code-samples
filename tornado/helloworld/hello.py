@@ -12,7 +12,7 @@ class MainHandler(tornado.web.RequestHandler):
         print self.request.body
 
     def _sleep(self):
-        time.sleep(5) 
+        time.sleep(1) 
         self.write("Hello, world")
         self.set_status(200)
         self.finish()

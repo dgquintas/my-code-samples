@@ -1,0 +1,3 @@
+Prefix: /usr/local
+C compiler: gcc
+Stuff: hello

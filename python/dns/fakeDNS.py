@@ -84,14 +84,12 @@ class Query(object):
     resData = ''.join(resParts)
     return resData
 
-
-
 if __name__ == "__main__":
   if len(sys.argv) < 3:
     print("Usage: %s <gmail user> <gmail pw>" % sys.argv[0])
   else:
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.bind((socket.gethostname(), 53))
+    s.bind(('0.0.0.0', 53))
 
     try:
       while True:

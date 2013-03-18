@@ -1,0 +1,3 @@
+Prefix: @prefix@
+C compiler: @CC@
+Stuff: @stuff@

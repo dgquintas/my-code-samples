@@ -1,1 +1,0 @@
-/opt/local/Library/Frameworks/Python.framework/Versions/3.2/lib/python3.2/struct.py

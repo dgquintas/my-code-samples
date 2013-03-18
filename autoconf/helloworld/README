@@ -1,0 +1,6 @@
+from http://www.edwardrosten.com/code/autoconf/
+
+to generate a configure script, run
+autconf configure.ac > configure
+chmod +x configure
+./configure
