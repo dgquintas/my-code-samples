@@ -1,0 +1,5 @@
+/home/dgquintas/Dropbox/samples/mono/HolaMundo/HolaMundo/HolaMundo/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/dgquintas/Dropbox/samples/mono/HolaMundo/HolaMundo/HolaMundo/bin/Debug/HolaMundo.exe.mdb
+/home/dgquintas/Dropbox/samples/mono/HolaMundo/HolaMundo/HolaMundo/bin/Debug/HolaMundo.exe
+/home/dgquintas/Dropbox/samples/mono/HolaMundo/HolaMundo/HolaMundo/obj/x86/Debug/HolaMundo.exe
+/home/dgquintas/Dropbox/samples/mono/HolaMundo/HolaMundo/HolaMundo/obj/x86/Debug/HolaMundo.exe.mdb

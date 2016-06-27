@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11   CMakeFiles/main.dir/main.cpp.o  -o main -rdynamic benchmark/src/libbenchmark.a -lpthread 

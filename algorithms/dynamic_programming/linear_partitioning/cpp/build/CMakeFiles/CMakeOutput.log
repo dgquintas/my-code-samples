@@ -1,0 +1,569 @@
+The system is: Linux - 3.18.6-1-ARCH - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/3.1.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/3.1.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2092080380/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2092080380.dir/build.make CMakeFiles/cmTryCompileExec2092080380.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2092080380.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2092080380.dir/testCCompiler.c.o   -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2092080380
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2092080380.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec2092080380.dir/testCCompiler.c.o  -o cmTryCompileExec2092080380 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2897641908/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2897641908.dir/build.make CMakeFiles/cmTryCompileExec2897641908.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.1/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2897641908
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2897641908.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2897641908 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /build/gcc-multilib/src/gcc-4.9-20150304/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 4.9.2 20150304 (prerelease) (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2897641908' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdxRrS1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2897641908 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../.. CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2897641908/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2897641908.dir/build.make CMakeFiles/cmTryCompileExec2897641908.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.1/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2897641908]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2897641908.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2897641908 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /build/gcc-multilib/src/gcc-4.9-20150304/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.2 20150304 (prerelease) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2897641908' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdxRrS1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2897641908 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../.. CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccdxRrS1.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2897641908] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec2897641908.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2;/usr/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec611193857/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec611193857.dir/build.make CMakeFiles/cmTryCompileExec611193857.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec611193857.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec611193857.dir/feature_tests.c.o   -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec611193857
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec611193857.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec611193857.dir/feature_tests.c.o  -o cmTryCompileExec611193857 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4126732057/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4126732057.dir/build.make CMakeFiles/cmTryCompileExec4126732057.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4126732057.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec4126732057.dir/feature_tests.c.o   -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec4126732057
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4126732057.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec4126732057.dir/feature_tests.c.o  -o cmTryCompileExec4126732057 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:0c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2301287371/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2301287371.dir/build.make CMakeFiles/cmTryCompileExec2301287371.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2301287371.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2301287371.dir/feature_tests.c.o   -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2301287371
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2301287371.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec2301287371.dir/feature_tests.c.o  -o cmTryCompileExec2301287371 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:0c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1415525141/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1415525141.dir/build.make CMakeFiles/cmTryCompileExec1415525141.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1415525141.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1415525141.dir/testCXXCompiler.cxx.o -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1415525141
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1415525141.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTryCompileExec1415525141.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1415525141 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3613573058/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3613573058.dir/build.make CMakeFiles/cmTryCompileExec3613573058.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.1/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3613573058
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3613573058.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3613573058 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /build/gcc-multilib/src/gcc-4.9-20150304/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 4.9.2 20150304 (prerelease) (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3613573058' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxURgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3613573058 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../.. CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3613573058/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3613573058.dir/build.make CMakeFiles/cmTryCompileExec3613573058.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.1/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3613573058]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3613573058.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3613573058 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /build/gcc-multilib/src/gcc-4.9-20150304/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.2 20150304 (prerelease) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3613573058' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxURgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3613573058 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../.. CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckxURgK.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3613573058] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec3613573058.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2;/usr/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec865715578/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec865715578.dir/build.make CMakeFiles/cmTryCompileExec865715578.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec865715578.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec865715578.dir/feature_tests.cxx.o -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec865715578
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec865715578.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTryCompileExec865715578.dir/feature_tests.cxx.o  -o cmTryCompileExec865715578 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2433372410/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2433372410.dir/build.make CMakeFiles/cmTryCompileExec2433372410.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2433372410.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec2433372410.dir/feature_tests.cxx.o -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2433372410
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2433372410.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTryCompileExec2433372410.dir/feature_tests.cxx.o  -o cmTryCompileExec2433372410 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2911390752/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2911390752.dir/build.make CMakeFiles/cmTryCompileExec2911390752.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2911390752.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec2911390752.dir/feature_tests.cxx.o -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2911390752
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2911390752.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTryCompileExec2911390752.dir/feature_tests.cxx.o  -o cmTryCompileExec2911390752 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1728269882/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1728269882.dir/build.make CMakeFiles/cmTryCompileExec1728269882.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1728269882.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1728269882.dir/CheckIncludeFiles.c.o   -c /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1728269882
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1728269882.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec1728269882.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1728269882 -rdynamic 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3401312705/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3401312705.dir/build.make CMakeFiles/cmTryCompileExec3401312705.dir/build
+make[1]: Entering directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3401312705.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3401312705.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3401312705
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3401312705.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTryCompileExec3401312705.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3401312705 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/build/CMakeFiles/CMakeTmp'
+
+

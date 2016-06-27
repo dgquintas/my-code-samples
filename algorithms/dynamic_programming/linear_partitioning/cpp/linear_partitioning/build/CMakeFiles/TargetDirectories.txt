@@ -1,0 +1,7 @@
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/gmock/gtest/CMakeFiles/gtest.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/CMakeFiles/linear_partitioning_tests.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/CMakeFiles/linear_partitioning.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/gmock/CMakeFiles/gmock.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/gmock/gtest/CMakeFiles/gtest_main.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/CMakeFiles/build-tests.dir
+/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/gmock/CMakeFiles/gmock_main.dir

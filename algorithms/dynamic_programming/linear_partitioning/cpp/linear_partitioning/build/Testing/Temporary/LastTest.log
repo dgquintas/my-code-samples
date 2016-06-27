@@ -1,0 +1,33 @@
+Start testing: Mar 13 19:55 PDT
+----------------------------------------------------------
+1/1 Testing: LinearPartition
+1/1 Test: LinearPartition
+Command: "/home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests/linear_partitioning_tests"
+Directory: /home/dgquintas/Dropbox/samples/algorithms/dynamic_programming/linear_partitioning/cpp/linear_partitioning/build/tests
+"LinearPartition" start time: Mar 13 19:55 PDT
+Output:
+----------------------------------------------------------
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from LinearPartition
+[ RUN      ] LinearPartition.Test1to9
+[       OK ] LinearPartition.Test1to9 (0 ms)
+[ RUN      ] LinearPartition.TestEmpty
+[       OK ] LinearPartition.TestEmpty (0 ms)
+[ RUN      ] LinearPartition.TestSingle
+[       OK ] LinearPartition.TestSingle (0 ms)
+[----------] 3 tests from LinearPartition (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LinearPartition" end time: Mar 13 19:55 PDT
+"LinearPartition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 13 19:55 PDT

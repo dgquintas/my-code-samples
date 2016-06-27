@@ -1,0 +1,10 @@
+;
+; A simple boot sector program that loops forever
+;
+
+loop:
+    jmp loop
+
+times 510-($-$$) db 0; ; Fill up with zeros. $ is the address right before this
+                       ; instruction. $$ is the address of this section.
+dw 0xaa55

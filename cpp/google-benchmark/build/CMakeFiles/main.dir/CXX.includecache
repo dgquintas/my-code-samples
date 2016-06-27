@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../benchmark/include/benchmark/benchmark_api.h
+assert.h
+-
+stddef.h
+-
+stdint.h
+-
+macros.h
+../benchmark/include/benchmark/macros.h
+
+../benchmark/include/benchmark/macros.h
+
+/home/dgquintas/Dropbox/samples/cpp/google-benchmark/main.cpp
+set
+-
+unordered_set
+-
+cstdlib
+-
+benchmark/benchmark_api.h
+/home/dgquintas/Dropbox/samples/cpp/google-benchmark/benchmark/benchmark_api.h
+

@@ -1,0 +1,6 @@
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/bin/Debug/CsvDbDiffer.exe.mdb
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/bin/Debug/CsvDbDiffer.exe
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/obj/x86/Debug/CsvDbDiffer.exe
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/obj/x86/Debug/CsvDbDiffer.exe.mdb
+/home/dgquintas/Dropbox/samples/csharp/CsvDbDiffer/CsvDbDiffer/bin/Debug/CsvHelper.dll

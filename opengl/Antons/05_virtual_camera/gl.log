@@ -1,0 +1,4 @@
+GL_LOG_FILE log. local time Mon Aug 11 22:14:43 2014
+
+starting GLFW 3.0.1 X11 GLX glXGetProcAddress clock_gettime /dev/jsrenderer: GeForce 9400M/integrated/SSE2
+version: 3.3.0 NVIDIA 340.24

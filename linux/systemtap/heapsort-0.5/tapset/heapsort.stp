@@ -1,0 +1,59 @@
+/* heapsort example tapset.
+   Copyright (C) 2009, Red Hat Inc.
+
+This file is part of heapsort example.
+
+ Each probe defines the probe name and a full probestr which consists
+ of the probe name and between brackets all argument names and values.
+ */
+
+probe heapsort_input_start = process("heapsort").mark("input_start")
+{
+  probestr = sprintf("%s", $$name);
+}
+
+probe heapsort_input_done = process("heapsort").mark("input_done")
+{
+  count = $arg1;
+  probestr = sprintf("%s(count=%d)", $$name, count);
+}
+
+probe heapsort_buffer_resize_start =
+  process("heapsort").mark("buffer_resize_start")
+{
+  probestr = sprintf("%s", $$name);
+}
+
+probe heapsort_buffer_resize_done = 
+  process("heapsort").mark("buffer_resize_done")
+{
+  probestr = sprintf("%s", $$name);
+}
+
+probe heapsort_output_start = process("heapsort").mark("output_start")
+{
+  count = $arg1;
+  probestr = sprintf("%s(count=%d)", $$name, count);
+}
+
+probe heapsort_output_done = process("heapsort").mark("output_done")
+{
+  probestr = sprintf("%s", $$name);
+}
+
+probe heapsort_heap_place = process("heapsort").mark("heap_place")
+{
+  position = $arg1;
+  value = $arg2;
+  probestr = sprintf("%s(position=%d, value=%d)", $$name, position, value);
+}
+
+probe heapsort_heap_build_start = process("heapsort").mark("heap_build_start")
+{
+  probestr = sprintf("%s", $$name);
+}
+
+probe heapsort_heap_build_done = process("heapsort").mark("heap_build_done")
+{
+  probestr = sprintf("%s", $$name);
+}

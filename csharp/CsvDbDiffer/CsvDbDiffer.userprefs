@@ -1,0 +1,32 @@
+﻿<Properties StartupItem="CsvDbDiffer/CsvDbDiffer.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CsvDbDiffer/Program.cs">
+    <Files>
+      <File FileName="CsvDbDiffer/Program.cs" Line="10" Column="9" />
+      <File FileName="CsvDbDiffer/DbReader.cs" Line="41" Column="48" />
+      <File FileName="CsvDbDiffer/CsvReader.cs" Line="56" Column="57" />
+      <File FileName="NUnit.Tests/CsvReaderTest.cs" Line="93" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="CsvDbDiffer" expanded="True">
+            <Node name="NUnit.Tests" expanded="True">
+              <Node name="NUnit" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="DbReaderTest" expanded="True">
+                    <Node name="TestRead" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

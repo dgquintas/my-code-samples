@@ -1,0 +1,7 @@
+probe process.function("*") {
+    printf("%s ->\n", thread_indent(1))
+}
+
+probe process.function("*").return {
+    printf("%s ->\n", thread_indent(-1))
+}

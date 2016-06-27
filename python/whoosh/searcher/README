@@ -1,0 +1,10 @@
+A text search engine based on Whoosh (https://bitbucket.org/mchaput/whoosh/wiki/Home).
+
+To play with it, create a virtualenv:
+$ mkvirtualenv gitpoints-searcher
+$ git clone <this repo>
+$ cd playground/searcher
+$ pip install -r requirements.txt
+
+To run the tests (assuming $PWD == gitpoints/searcher)
+$ python -m unittest

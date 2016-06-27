@@ -1,0 +1,50 @@
+global starts, times
+
+probe heapsort_input_start {
+  t = gettimeofday_us();
+  starts[pid(),"input"] = t;
+}
+
+probe heapsort_input_done {
+  t = gettimeofday_us();
+  if (s = starts[pid(),"input"]) {
+     times["input"] <<< t-s;
+     delete starts[pid(),"input"];
+  }
+}
+
+probe heapsort_output_start {
+  t = gettimeofday_us();
+  starts[pid(),"output"] = t;
+}
+
+probe heapsort_output_done {
+  t = gettimeofday_us();
+  if (s = starts[pid(),"output"]) {
+     times["output"] <<< t-s;
+     delete starts[pid(),"output"];
+  }
+}
+
+probe heapsort_heap_build_start {
+  t = gettimeofday_us();
+  starts[pid(),"heap_build"] = t
+}
+
+probe heapsort_heap_build_done
+{
+  t = gettimeofday_us();
+  if (s = starts[pid(),"heap_build"]) {
+     times["heap_build"] <<< t-s;
+     delete starts[pid(),"heap_build"];
+  }
+}
+
+probe end {
+  printf("%15s %10s %10s %10s\n", "operation", 
+    "min(us)", "avg(us)", "max(us)");
+  foreach ([op] in times) {
+    printf("%15s %10d %10d %10d\n", op, 
+          @min(times[op]), @avg(times[op]), @max(times[op]));
+  }
+}

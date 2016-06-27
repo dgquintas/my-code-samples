@@ -1,0 +1,5 @@
+/home/dgquintas/Dropbox/samples/csharp/Sqlite/Sqlite/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/dgquintas/Dropbox/samples/csharp/Sqlite/Sqlite/bin/Debug/Sqlite.exe.mdb
+/home/dgquintas/Dropbox/samples/csharp/Sqlite/Sqlite/bin/Debug/Sqlite.exe
+/home/dgquintas/Dropbox/samples/csharp/Sqlite/Sqlite/obj/x86/Debug/Sqlite.exe
+/home/dgquintas/Dropbox/samples/csharp/Sqlite/Sqlite/obj/x86/Debug/Sqlite.exe.mdb
