@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -std=c++11   CMakeFiles/linear_partitioning_tests.dir/linear_partitioning_tests.cpp.o  -o linear_partitioning_tests -rdynamic ../liblinear_partitioning.a gmock/gtest/libgtest.a gmock/gtest/libgtest_main.a gmock/libgmock.a gmock/gtest/libgtest.a -lpthread 

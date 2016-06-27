@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/main.dir/main.cpp.o  -o main -rdynamic linear_partitioning/liblinear_partitioning.a 

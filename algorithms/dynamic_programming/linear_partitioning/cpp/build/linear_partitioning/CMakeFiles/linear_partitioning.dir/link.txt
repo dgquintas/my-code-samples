@@ -1,2 +1,0 @@
-/usr/bin/ar cq liblinear_partitioning.a  CMakeFiles/linear_partitioning.dir/linear_partitioning.cpp.o
-/usr/bin/ranlib liblinear_partitioning.a
